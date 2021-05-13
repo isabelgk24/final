@@ -191,6 +191,22 @@
       "oAP" : "\/deploy\/skaftafell.html",
       "oF" : 0
     },
+    "\/dev\/content\/aurora.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/aurora.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/conservation.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/conservation.html",
+      "oF" : 0
+    },
     "\/dev\/content\/history.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -206,6 +222,14 @@
       "oA" : 1,
       "oAP" : "\/deploy\/skaftafell.html",
       "oF" : 2
+    },
+    "\/dev\/content\/unesco.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/unesco.html",
+      "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
