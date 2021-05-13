@@ -21,12 +21,12 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/content1\/5.jpg" : {
+    "\/deploy\/img\/aurora\/4.jpg" : {
       "ft" : 16384,
-      "iS" : 51363,
+      "iS" : 350377,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content1\/5.jpg",
+      "oAP" : "\/deploy\/img\/aurora\/4.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -34,12 +34,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content1\/6.jpg" : {
+    "\/deploy\/img\/conservation\/5.jpg" : {
       "ft" : 16384,
-      "iS" : 83945,
+      "iS" : 235980,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content1\/6.jpg",
+      "oAP" : "\/deploy\/img\/conservation\/5.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -47,12 +47,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content2\/7.jpg" : {
+    "\/deploy\/img\/conservation\/6.jpg" : {
       "ft" : 16384,
-      "iS" : 278748,
+      "iS" : 1638705,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content2\/7.jpg",
+      "oAP" : "\/deploy\/img\/conservation\/6.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -60,12 +60,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content2\/8.jpg" : {
+    "\/deploy\/img\/conservation\/7.jpg" : {
       "ft" : 16384,
-      "iS" : 270462,
+      "iS" : 800513,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content2\/8.jpg",
+      "oAP" : "\/deploy\/img\/conservation\/7.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -73,12 +73,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content2\/9.jpg" : {
+    "\/deploy\/img\/conservation\/8.jpg" : {
       "ft" : 16384,
-      "iS" : 288854,
+      "iS" : 1390768,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content2\/9.jpg",
+      "oAP" : "\/deploy\/img\/conservation\/8.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -86,12 +86,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content2\/10.jpg" : {
+    "\/deploy\/img\/conservation\/9.jpg" : {
       "ft" : 16384,
-      "iS" : 416625,
+      "iS" : 641390,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content2\/10.jpg",
+      "oAP" : "\/deploy\/img\/conservation\/9.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -99,12 +99,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/content2\/11.jpg" : {
+    "\/deploy\/img\/header\/1.jpg" : {
       "ft" : 16384,
-      "iS" : 308026,
+      "iS" : 371814,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/content2\/11.jpg",
+      "oAP" : "\/deploy\/img\/header\/1.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -112,12 +112,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/gallery\/2.jpg" : {
+    "\/deploy\/img\/history\/2.jpg" : {
       "ft" : 16384,
-      "iS" : 979682,
+      "iS" : 1567173,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/gallery\/2.jpg",
+      "oAP" : "\/deploy\/img\/history\/2.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -125,12 +125,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/gallery\/3.jpg" : {
+    "\/deploy\/img\/skaftafell\/3.jpg" : {
       "ft" : 16384,
-      "iS" : 841110,
+      "iS" : 1104730,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/gallery\/3.jpg",
+      "oAP" : "\/deploy\/img\/skaftafell\/3.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -138,25 +138,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/gallery\/4.jpg" : {
+    "\/deploy\/img\/unesco\/10.jpg" : {
       "ft" : 16384,
-      "iS" : 395009,
+      "iS" : 1744647,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/gallery\/4.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/hero\/1.jpg" : {
-      "ft" : 16384,
-      "iS" : 2962388,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero\/1.jpg",
+      "oAP" : "\/deploy\/img\/unesco\/10.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -182,14 +169,6 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
-    },
-    "\/deploy\/skaftafell.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/skaftafell.html",
-      "oF" : 0
     },
     "\/dev\/content\/aurora.kit" : {
       "cB" : 0,
