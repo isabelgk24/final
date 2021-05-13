@@ -360,6 +360,10 @@ ul li {
   list-style: none;
 }
 
+image {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
