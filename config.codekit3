@@ -191,6 +191,14 @@
       "oAP" : "\/dev\/content\/history.html",
       "oF" : 0
     },
+    "\/dev\/content\/skaftafell.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/skaftafell.html",
+      "oF" : 2
+    },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
