@@ -4,19 +4,13 @@
 
 #conservation{
 
-   #toptext{
-      display: grid;
-      grid-template-columns: 15% auto 15%;
-      grid-template-areas: ". toptext .";
-   }
-
-   #bottomtext{
-      display: grid;
-      grid-template-columns: 15% auto 15%;
-      grid-template-areas: ". bottomtext .";
-   }
-
+#images{
    aside{
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      ". img5 img6 img7 img8 img9 .";
 
       div{
          background-position: center;
@@ -28,32 +22,38 @@
          background-image: url("../img/conservation/5.jpg");
          height: 82px;
          width: 82px;
+         grid-area: img5;
       }
 
       #img6 {
          background-image: url("../img/conservation/6.jpg");
          height: 170px;
          width: 170px;
+         grid-area: img6;
       }
 
       #img7 {
          background-image: url("../img/conservation/7.jpg");
          height: 240px;
          width: 240px;
+         grid-area: img7;
       }
 
       #img8 {
          background-image: url("../img/conservation/8.jpg");
          height: 170px;
          width: 170px;
+         grid-area: img8;
       }
 
       #img9 {
          background-image: url("../img/conservation/9.jpg");
          height: 82px;
          width: 82px;
+         grid-area: img9;
       }
 
    }
+}
 
 }
