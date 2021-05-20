@@ -1,3 +1,19 @@
 /* =============
     Unesco
 ============= */
+
+#unesco{
+
+    >div{
+        display: grid;
+        grid-template-columns: 5% auto auto 5%;
+        grid-template-areas: ". right paragraph .";
+
+        background-image: url(../img/header/1.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        height: 900px;
+        width: 55%;
+    }
+
+}

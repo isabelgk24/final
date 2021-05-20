@@ -1,3 +1,19 @@
 /* =============
     Aurora
 ============= */
+
+#aurora{
+
+    >div{
+        background-image: url(../img/aurora/4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 900px;
+
+        display: grid;
+        grid-template-columns: 40% auto 10%;
+        grid-template-areas: ". central .";
+    }
+
+}

@@ -1,3 +1,51 @@
 /* =============
    Conservation
 ============= */
+
+#conservation{
+
+   #toptext{
+      display: grid;
+      grid-template-columns: 15% auto 15%;
+      grid-template-areas: ". toptext .";
+   }
+
+   #bottomtext{
+      display: grid;
+      grid-template-columns: 15% auto 15%;
+      grid-template-areas: ". bottomtext .";
+   }
+
+   aside{
+
+      div{
+         background-position: center;
+         background-size: cover;
+         height: 100px;
+         width: 300px;
+         border-radius: 100%;
+      }
+   
+      #img5 {
+         background-image: url("../img/conservation/5.jpg");
+      }
+
+      #img6 {
+         background-image: url("../img/conservation/6.jpg");
+      }
+
+      #img7 {
+         background-image: url("../img/conservation/7.jpg");
+      }
+
+      #img8 {
+         background-image: url("../img/conservation/8.jpg");
+      }
+
+      #img9 {
+         background-image: url("../img/conservation/9.jpg");
+      }
+
+   }
+
+}
