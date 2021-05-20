@@ -23,14 +23,87 @@
         padding: 50px 0px 50px;
     }
 
-
     >div{
-    
-        display: grid;
-        grid-area: "history";
-        grid-template-columns: 15% auto;
-        grid-template-areas: ". historytext";
+
+        @include md{
+            display: grid;
+            grid-template-columns: 30% auto;
+            grid-template-areas: 
+            ". h-text"
+            "h-title h-title";
+        }
+        @include lg{
+            grid-template-columns: 40% auto;
+        }
+        @include xl{
+            grid-template-columns: 40% auto 15%;
+            grid-template-areas: 
+            ". h-text ."
+            "h-title h-title .";
+        }
+
+        section{
+            padding: 0px 40px;
+            @include md{
+                grid-area: h-text;
+            }
+            p{
+                padding-bottom: 15px;
+                line-height: 20px;
+                font-size: rem-calc(14);
+                font-weight: 300;
+                font-family: 'work sans';
+                @include lg{
+
+                }
+            }
+        }
+        article{
+            text-align: right;
+            padding-right: 20px;
+
+            @include md{
+                grid-area: h-title;
+                // text-align: left;
+            }
+
+            h2{
+                text-align: right;
+                font-size: rem-calc(50);
+                font-weight: 400;
+                font-family: 'rozha one';
+                line-height: 48px;
+                margin-bottom: 10px;
+                
+                @include md{
+                    padding-right: 30%;
+                    padding-left: 10%;
+                    font-size: rem-calc(110);
+                    line-height: 90px;
+                    margin-bottom: 20px;
+                }
+                @include lg{
+                    text-align: left;
+                    // padding-right: 40%;
+                    // padding-left: 40px;
+                }
+                @include xl{
+                    text-align: left;
+                    padding-left: 20%;
+                    padding-right: 15%;
+                }
+            }
+        }
     }
+
 }
+//     >div{
+    
+//         display: grid;
+//         grid-area: "history";
+//         grid-template-columns: 15% auto;
+//         grid-template-areas: ". historytext";
+//     }
+// }
 
 
