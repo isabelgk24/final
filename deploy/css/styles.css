@@ -471,15 +471,17 @@ textarea {
 /* =============
     Aurora
 ============= */
+#aurora #central {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-areas: ". content .";
+}
 #aurora > div {
   background-image: url(../img/aurora/4.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
-  display: grid;
-  grid-template-columns: 40% auto 10%;
-  grid-template-areas: ". central .";
+  height: 800px;
 }
 
 /* =============
