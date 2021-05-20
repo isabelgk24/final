@@ -352,21 +352,29 @@ template {
 /* =============
     Base
 ============= */
-ul {
+body {
+  font-family: "Work Sans", sans-serif;
+  font-family: "Rozha One", serif;
+}
+body ul {
   padding: 0;
   margin: 0;
 }
-ul li {
+body ul li {
   list-style: none;
 }
-
-image {
+body image {
   width: 100%;
 }
 
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Work Sans", sans-serif;
+  font-family: "Rozha One", serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -436,12 +444,32 @@ textarea {
 /* =============
     History
 ============= */
-#history > div {
+#history {
   background-image: url(../img/history/2.jpg);
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  color: #0C1B43;
+  padding: 100px 0 40px;
+}
+@media (min-width: 768px) {
+  #history {
+    height: 600px;
+    padding: 175px 0;
+  }
+}
+@media (min-width: 992px) {
+  #history {
+    height: 550px;
+    padding: 50px 0px 100px;
+  }
+}
+@media (min-width: 1200px) {
+  #history {
+    padding: 50px 0px 50px;
+  }
+}
+#history > div {
   display: grid;
   grid-area: "history";
   grid-template-columns: 15% auto;
@@ -463,45 +491,119 @@ textarea {
 ============= */
 #aurora {
   background-image: url(../img/aurora/4.jpg);
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
   padding: 100px 0 40px;
 }
 @media (min-width: 768px) {
+  #aurora {
+    height: 600px;
+    padding: 175px 0;
+  }
+}
+@media (min-width: 992px) {
+  #aurora {
+    height: 550px;
+    padding: 50px 0px 100px;
+  }
+}
+@media (min-width: 1200px) {
+  #aurora {
+    padding: 50px 0px 50px;
+  }
+}
+@media (min-width: 768px) {
   #aurora #content {
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 30% auto;
     grid-template-areas: "a-title a-title" ". a-text";
+  }
+}
+@media (min-width: 992px) {
+  #aurora #content {
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #aurora #content {
+    grid-template-columns: 40% auto 15%;
+    grid-template-areas: "a-title a-title ." ". a-text .";
   }
 }
 #aurora #content article {
   text-align: right;
   padding-right: 20px;
-  font-size: 2.5rem;
 }
 @media (min-width: 768px) {
   #aurora #content article {
     grid-area: a-title;
   }
 }
+#aurora #content article h1 {
+  text-align: right;
+  font-size: 3.125rem;
+  font-weight: 400;
+  font-family: "rozha one";
+  line-height: 48px;
+  margin-bottom: 10px;
+}
 @media (min-width: 768px) {
   #aurora #content article h1 {
-    border: 1px solid red;
-    padding-right: 40vw;
-    padding-left: 30vw;
-    line-height: 60px;
+    padding-right: 30%;
+    padding-left: 10%;
+    font-size: 6.875rem;
+    line-height: 90px;
     margin-bottom: 20px;
   }
 }
+@media (min-width: 992px) {
+  #aurora #content article h1 {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  #aurora #content article h1 {
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 15%;
+  }
+}
 #aurora #content section {
-  padding: 0 40px;
+  padding: 0px 40px;
 }
 @media (min-width: 768px) {
   #aurora #content section {
     grid-area: a-text;
   }
+}
+#aurora #content section p {
+  padding-bottom: 15px;
+  line-height: 20px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-family: "work sans";
+}
+#aurora #content section p span {
+  display: none;
+}
+#aurora #content section button {
+  margin-top: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.3125rem;
+  font-weight: 400;
+  font-family: "work sans";
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px 10px;
+  transition: 0.25s;
+}
+#aurora #content section button:hover {
+  background-color: #ffffff;
+  color: #0C1B43;
+  cursor: pointer;
 }
 
 /* =============

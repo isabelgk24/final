@@ -2,16 +2,30 @@
     History
 ============= */
 
-#history {
+#history { 
+
+    background-image: url(../img/history/2.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $navy;
+    padding: 100px 0 40px;
+
+    @include md{
+        height: 600px;
+        padding: 175px 0;
+    }
+    @include lg{
+        height: 550px;
+        padding: 50px 0px 100px;
+    }
+    @include xl{
+        padding: 50px 0px 50px;
+    }
 
 
     >div{
-        background-image: url(../img/history/2.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 800px;
-
+    
         display: grid;
         grid-area: "history";
         grid-template-columns: 15% auto;
