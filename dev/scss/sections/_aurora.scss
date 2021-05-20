@@ -2,32 +2,55 @@
     Aurora
 ============= */
 
-#aurora{
+#aurora {
+
+    background-image: url(../img/aurora/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0 40px;
 
     
+    #content {
 
-    >div{
-
-    h1{
-        text-align: left;
-        // color: white;
-    }
-
-    color: white;
-    display: grid;
-    grid-area: "content";
-    grid-template-columns: 30% auto;
-    grid-template-areas: ". text";
-    
-    }
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-areas: 
+            "a-title a-title"
+            ". a-text";
+        }
     
 
-    >div{
-        background-image: url(../img/aurora/4.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 800px;
+        article{
+            text-align: right;
+            padding-right: 20px;
+            font-size: rem-calc(40);
+
+            @include md{
+                grid-area: a-title;
+                // text-align: left;
+            }
+
+            h1{
+                
+                @include md{
+                    border:  1px solid red;
+                    padding-right: 40vw;
+                    padding-left: 30vw;
+                    line-height: 60px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        section{
+            padding: 0 40px;
+            @include md{
+                grid-area: a-text;
+            }
+        }
     }
 
 }
