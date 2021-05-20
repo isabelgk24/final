@@ -405,12 +405,14 @@ textarea {
     Header
 ============= */
 #header > div {
-  background-image: url(../img/header/1.jpg);
+  background-color: red;
+  background-image: url(../img/header/1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
+  height: 800px;
 }
+
 /* =============
     Footer
 ============= */
@@ -493,24 +495,32 @@ textarea {
 #conservation aside div {
   background-position: center;
   background-size: cover;
-  height: 100px;
-  width: 300px;
   border-radius: 100%;
 }
 #conservation aside #img5 {
   background-image: url("../img/conservation/5.jpg");
+  height: 82px;
+  width: 82px;
 }
 #conservation aside #img6 {
   background-image: url("../img/conservation/6.jpg");
+  height: 170px;
+  width: 170px;
 }
 #conservation aside #img7 {
   background-image: url("../img/conservation/7.jpg");
+  height: 240px;
+  width: 240px;
 }
 #conservation aside #img8 {
   background-image: url("../img/conservation/8.jpg");
+  height: 170px;
+  width: 170px;
 }
 #conservation aside #img9 {
   background-image: url("../img/conservation/9.jpg");
+  height: 82px;
+  width: 82px;
 }
 
 /* =============
