@@ -23,7 +23,7 @@
     },
     "\/deploy\/img\/aurora\/4.jpg" : {
       "ft" : 16384,
-      "iS" : 1811901,
+      "iS" : 915886,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/aurora\/4.jpg",
@@ -101,7 +101,7 @@
     },
     "\/deploy\/img\/header\/1.png" : {
       "ft" : 32768,
-      "iS" : 3317220,
+      "iS" : 3315796,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/header\/1.png",
       "oF" : 0,
@@ -140,13 +140,13 @@
     },
     "\/deploy\/img\/unesco\/10.jpg" : {
       "ft" : 16384,
-      "iS" : 1744647,
+      "iS" : 3202200,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/unesco\/10.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
