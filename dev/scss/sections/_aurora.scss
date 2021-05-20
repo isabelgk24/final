@@ -4,10 +4,21 @@
 
 #aurora{
 
-    #central{
+    
+
+    #content{
+
+    h1{
+        text-align: right;
+        // color: white;
+    }
+    color: white;
     display: grid;
-    grid-template-columns: 100px auto 100px;
-    grid-template-areas: ". content .";
+    grid-area: "title content";
+    grid-template-columns: 20% auto;
+    grid-template-areas: ". title"
+    ". text";
+    
     }
     
 

@@ -410,12 +410,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   height: 900px;
-  border: 5px solid red;
 }
-#header h1 {
-  color: red;
-}
-
 /* =============
     Footer
 ============= */
@@ -460,21 +455,19 @@ textarea {
   grid-template-areas: ". left right .";
   padding: 20px;
 }
-#skaftafell > div {
-  background-image: url(../img/skaftafell/3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 900px;
-}
 
 /* =============
     Aurora
 ============= */
-#aurora #central {
+#aurora #content {
+  color: white;
   display: grid;
-  grid-template-columns: 100px auto 100px;
-  grid-template-areas: ". content .";
+  grid-area: "title content";
+  grid-template-columns: 20% auto;
+  grid-template-areas: ". title" ". text";
+}
+#aurora #content h1 {
+  text-align: right;
 }
 #aurora > div {
   background-image: url(../img/aurora/4.jpg);
