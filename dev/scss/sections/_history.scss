@@ -5,7 +5,7 @@
 #history { 
 
     background-image: url(../img/history/2.jpg);
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $navy;
@@ -13,7 +13,7 @@
 
     @include md{
         height: 600px;
-        padding: 175px 0;
+        padding: 150px 0;
     }
     @include lg{
         height: 550px;
@@ -23,87 +23,82 @@
         padding: 50px 0px 50px;
     }
 
-    >div{
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    grid-template-areas: ". text .";
 
+    @include md{
+        grid-template-columns: 105px auto 105px;
+    }
+    @include lg{
+        grid-template-columns: 180px auto 180px;
+    }
+    @include xl{
+        grid-template-columns: auto 1400px auto;
+    }
+    
+    >div{
+        grid-area: text;
         @include md{
             display: grid;
-            grid-template-columns: 30% auto;
+            grid-template-columns: 405px auto;
             grid-template-areas: 
-            ". h-text"
+            "h-text ."
             "h-title h-title";
         }
         @include lg{
-            grid-template-columns: 40% auto;
+            grid-template-columns: 550px auto;
         }
         @include xl{
-            grid-template-columns: 40% auto 15%;
+            grid-template-columns: auto 550px auto;
             grid-template-areas: 
             ". h-text ."
             "h-title h-title .";
         }
+    
 
-        section{
-            padding: 0px 40px;
-            @include md{
-                grid-area: h-text;
-            }
-            p{
-                padding-bottom: 15px;
-                line-height: 20px;
-                font-size: rem-calc(14);
-                font-weight: 300;
-                font-family: 'work sans';
-                @include lg{
-
-                }
-            }
-        }
         article{
-            text-align: right;
-            padding-right: 20px;
-
-            @include md{
-                grid-area: h-title;
-                // text-align: left;
-            }
+            grid-area: h-title;
+            text-align: left;
 
             h2{
                 text-align: right;
                 font-size: rem-calc(50);
                 font-weight: 400;
                 font-family: 'rozha one';
-                line-height: 48px;
-                margin-bottom: 10px;
                 
                 @include md{
-                    padding-right: 30%;
-                    padding-left: 10%;
+                    margin-right: 10%;
                     font-size: rem-calc(110);
-                    line-height: 90px;
-                    margin-bottom: 20px;
+                    margin-top: -70px;
                 }
                 @include lg{
-                    text-align: left;
-                    // padding-right: 40%;
-                    // padding-left: 40px;
+                    padding-right: 0%;
+                    text-align: right;
+                    margin-top: -50px;
                 }
                 @include xl{
-                    text-align: left;
-                    padding-left: 20%;
-                    padding-right: 15%;
+                    margin-right: -10%;
                 }
+            }
+        }
+
+        section{
+            grid-area: h-text;
+            p{
+                padding-bottom: 15px;
+                line-height: 20px;
+                font-size: rem-calc(14);
+                font-weight: 300;
+                font-family: 'work sans';
+            }
+            @include md{
+                margin-top: 40px;
+            }
+            @include lg{
+                margin-top: 80px;
             }
         }
     }
 
 }
-//     >div{
-    
-//         display: grid;
-//         grid-area: "history";
-//         grid-template-columns: 15% auto;
-//         grid-template-areas: ". historytext";
-//     }
-// }
-
-

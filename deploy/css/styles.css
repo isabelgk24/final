@@ -505,16 +505,19 @@ textarea {
 ============= */
 #history {
   background-image: url(../img/history/2.jpg);
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #0C1B43;
   padding: 100px 0 40px;
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-areas: ". text .";
 }
 @media (min-width: 768px) {
   #history {
     height: 600px;
-    padding: 175px 0;
+    padding: 150px 0;
   }
 }
 @media (min-width: 992px) {
@@ -529,30 +532,72 @@ textarea {
   }
 }
 @media (min-width: 768px) {
+  #history {
+    grid-template-columns: 105px auto 105px;
+  }
+}
+@media (min-width: 992px) {
+  #history {
+    grid-template-columns: 180px auto 180px;
+  }
+}
+@media (min-width: 1200px) {
+  #history {
+    grid-template-columns: auto 1400px auto;
+  }
+}
+#history > div {
+  grid-area: text;
+}
+@media (min-width: 768px) {
   #history > div {
     display: grid;
-    grid-template-columns: 30% auto;
-    grid-template-areas: ". h-text" "h-title h-title";
+    grid-template-columns: 405px auto;
+    grid-template-areas: "h-text ." "h-title h-title";
   }
 }
 @media (min-width: 992px) {
   #history > div {
-    grid-template-columns: 40% auto;
+    grid-template-columns: 550px auto;
   }
 }
 @media (min-width: 1200px) {
   #history > div {
-    grid-template-columns: 40% auto 15%;
+    grid-template-columns: auto 550px auto;
     grid-template-areas: ". h-text ." "h-title h-title .";
   }
 }
-#history > div section {
-  padding: 0px 40px;
+#history > div article {
+  grid-area: h-title;
+  text-align: left;
+}
+#history > div article h2 {
+  text-align: right;
+  font-size: 3.125rem;
+  font-weight: 400;
+  font-family: "rozha one";
 }
 @media (min-width: 768px) {
-  #history > div section {
-    grid-area: h-text;
+  #history > div article h2 {
+    margin-right: 10%;
+    font-size: 6.875rem;
+    margin-top: -70px;
   }
+}
+@media (min-width: 992px) {
+  #history > div article h2 {
+    padding-right: 0%;
+    text-align: right;
+    margin-top: -50px;
+  }
+}
+@media (min-width: 1200px) {
+  #history > div article h2 {
+    margin-right: -10%;
+  }
+}
+#history > div section {
+  grid-area: h-text;
 }
 #history > div section p {
   padding-bottom: 15px;
@@ -561,42 +606,14 @@ textarea {
   font-weight: 300;
   font-family: "work sans";
 }
-#history > div article {
-  text-align: right;
-  padding-right: 20px;
-}
 @media (min-width: 768px) {
-  #history > div article {
-    grid-area: h-title;
-  }
-}
-#history > div article h2 {
-  text-align: right;
-  font-size: 3.125rem;
-  font-weight: 400;
-  font-family: "rozha one";
-  line-height: 48px;
-  margin-bottom: 10px;
-}
-@media (min-width: 768px) {
-  #history > div article h2 {
-    padding-right: 30%;
-    padding-left: 10%;
-    font-size: 6.875rem;
-    line-height: 90px;
-    margin-bottom: 20px;
+  #history > div section {
+    margin-top: 40px;
   }
 }
 @media (min-width: 992px) {
-  #history > div article h2 {
-    text-align: left;
-  }
-}
-@media (min-width: 1200px) {
-  #history > div article h2 {
-    text-align: left;
-    padding-left: 20%;
-    padding-right: 15%;
+  #history > div section {
+    margin-top: 80px;
   }
 }
 
@@ -627,7 +644,7 @@ textarea {
 @media (min-width: 768px) {
   #aurora {
     height: 600px;
-    padding: 175px 0;
+    padding: 150px 0;
   }
 }
 @media (min-width: 992px) {
