@@ -412,6 +412,42 @@ textarea {
 /* =============
     Header
 ============= */
+#header #v {
+  color: #7D3731;
+  line-height: 50px;
+  font-size: 3.5625rem;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  #header #v {
+    line-height: 90px;
+    font-size: 6.875rem;
+  }
+}
+#header #n {
+  color: #0C1B43;
+  line-height: 50px;
+  font-size: 3.5625rem;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  #header #n {
+    line-height: 90px;
+    font-size: 6.875rem;
+  }
+}
+#header #p {
+  color: #0C1B43;
+  line-height: 70px;
+  font-size: 8.75rem;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  #header #p {
+    line-height: 120px;
+    font-size: 18.75rem;
+  }
+}
 #header > div {
   background-image: url(../img/header/1.png);
   background-position: bottom;

@@ -4,6 +4,36 @@
 
 #header{
 
+    #v{
+        color: $terracotta;
+        line-height: 50px;
+        font-size: rem-calc(57);
+        font-weight: 300;
+        @include md{
+            line-height: 90px;
+            font-size: rem-calc(110);
+        }
+    }
+    #n{
+        color: $navy;
+        line-height: 50px;
+        font-size: rem-calc(57);
+        font-weight: 300;
+        @include md{
+            line-height: 90px;
+            font-size: rem-calc(110);
+        }
+    }
+    #p{
+        color: $navy;
+        line-height: 70px;
+        font-size: rem-calc(140);
+        font-weight: 300;
+        @include md{
+            line-height: 120px;
+            font-size: rem-calc(300);
+        }
+    }
     >div{
         background-image: url(../img/header/1.png);
         background-position: bottom;
