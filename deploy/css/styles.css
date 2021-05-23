@@ -679,8 +679,6 @@ textarea {
   grid-template-areas: ". img5 img6 img7 img8 img9 .";
 }
 #conservation #images aside div {
-  background-position: center;
-  background-size: cover;
   border-radius: 100%;
 }
 #conservation #images aside #img5 {

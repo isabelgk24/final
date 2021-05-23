@@ -6,15 +6,13 @@
 
 #images{
    aside{
-
+      
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-areas: 
       ". img5 img6 img7 img8 img9 .";
 
       div{
-         background-position: center;
-         background-size: cover;
          border-radius: 100%;
       }
    
