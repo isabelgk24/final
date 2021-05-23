@@ -23,22 +23,34 @@
         padding: 50px 0px 50px;
     }
 
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    grid-template-areas: ". text .";
 
+    @include md{
+        grid-template-columns: 64px auto 64px;
+    }
+    @include lg{
+        grid-template-columns: 95px auto 95px;
+    }
+    @include xl{
+        grid-template-columns: auto 1400px auto;
+    }
     
     >div{
-
+        grid-area: text;
         @include md{
             display: grid;
-            grid-template-columns: 30% auto;
+            grid-template-columns: auto 405px;
             grid-template-areas: 
             "a-title a-title"
             ". a-text";
         }
         @include lg{
-            grid-template-columns: 40% auto;
+            grid-template-columns: auto 550px;
         }
         @include xl{
-            grid-template-columns: 40% auto 15%;
+            grid-template-columns: auto 550px auto;
             grid-template-areas: 
             "a-title a-title ."
             ". a-text .";
@@ -46,13 +58,8 @@
     
 
         article{
+            grid-area: a-title;
             text-align: right;
-            padding-right: 20px;
-
-            @include md{
-                grid-area: a-title;
-                // text-align: left;
-            }
 
             h1{
                 text-align: right;
@@ -63,30 +70,29 @@
                 margin-bottom: 10px;
                 
                 @include md{
-                    padding-right: 30%;
-                    padding-left: 10%;
+                    padding-right: 35%;
+                    padding-left: 1%;
                     font-size: rem-calc(110);
                     line-height: 90px;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
+                    margin-top: 50px;
                 }
                 @include lg{
-                    text-align: left;
-                    // padding-right: 40%;
-                    // padding-left: 40px;
+                    padding-right: 0%;
+                    text-align: right;
+                    line-height: 90px;
+                    margin-bottom: -5px;
+                    margin-top: 65px;
                 }
                 @include xl{
-                    text-align: left;
-                    padding-left: 20%;
-                    padding-right: 15%;
+                    margin-bottom: -20px;
+                    margin-top: 40px;
                 }
             }
         }
 
         section{
-            padding: 0px 40px;
-            @include md{
-                grid-area: a-text;
-            }
+            grid-area: a-text;
             p{
                 padding-bottom: 15px;
                 line-height: 20px;

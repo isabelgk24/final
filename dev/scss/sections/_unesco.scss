@@ -5,15 +5,19 @@
 #unesco{
 
     >div{
-        display: grid;
-        grid-template-columns: 5% auto auto 5%;
-        grid-template-areas: ". right paragraph .";
+        // display: grid;
+        // grid-template-columns: 5% auto auto 5%;
+        // grid-template-areas: ". right paragraph .";
 
         background-image: url(../img/unesco/10.jpg);
-        background-position: left;
+        background-position: center;
         background-repeat: no-repeat;
         height: 900px;
         width: 55%;
+
+        #right{
+            grid-area: right;
+        }
     }
 
-}
+} 

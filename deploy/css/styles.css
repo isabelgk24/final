@@ -461,8 +461,8 @@ textarea {
 ============= */
 #footer {
   display: grid;
-  grid-template-columns: 16px auto auto 16px;
-  grid-template-areas: ". footer social .";
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
 }
 #footer > div {
   grid-area: footer;
@@ -470,6 +470,10 @@ textarea {
 #footer > div #socialicons ul {
   grid-area: social;
   display: flex;
+  justify-content: center;
+}
+#footer > div #socialicons ul li {
+  margin-bottom: 16px;
 }
 #footer > div #socialicons ul li i {
   color: #0C1B43;
@@ -478,6 +482,9 @@ textarea {
   margin-left: 5px;
 }
 #footer > div h6 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  text-align: center;
   font-size: 0.75rem;
   font-weight: 400;
   font-family: "work sans";
@@ -613,6 +620,9 @@ textarea {
   background-size: cover;
   color: #ffffff;
   padding: 100px 0 40px;
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-areas: ". text .";
 }
 @media (min-width: 768px) {
   #aurora {
@@ -632,31 +642,44 @@ textarea {
   }
 }
 @media (min-width: 768px) {
+  #aurora {
+    grid-template-columns: 64px auto 64px;
+  }
+}
+@media (min-width: 992px) {
+  #aurora {
+    grid-template-columns: 95px auto 95px;
+  }
+}
+@media (min-width: 1200px) {
+  #aurora {
+    grid-template-columns: auto 1400px auto;
+  }
+}
+#aurora > div {
+  grid-area: text;
+}
+@media (min-width: 768px) {
   #aurora > div {
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: auto 405px;
     grid-template-areas: "a-title a-title" ". a-text";
   }
 }
 @media (min-width: 992px) {
   #aurora > div {
-    grid-template-columns: 40% auto;
+    grid-template-columns: auto 550px;
   }
 }
 @media (min-width: 1200px) {
   #aurora > div {
-    grid-template-columns: 40% auto 15%;
+    grid-template-columns: auto 550px auto;
     grid-template-areas: "a-title a-title ." ". a-text .";
   }
 }
 #aurora > div article {
+  grid-area: a-title;
   text-align: right;
-  padding-right: 20px;
-}
-@media (min-width: 768px) {
-  #aurora > div article {
-    grid-area: a-title;
-  }
 }
 #aurora > div article h1 {
   text-align: right;
@@ -668,32 +691,31 @@ textarea {
 }
 @media (min-width: 768px) {
   #aurora > div article h1 {
-    padding-right: 30%;
-    padding-left: 10%;
+    padding-right: 35%;
+    padding-left: 1%;
     font-size: 6.875rem;
     line-height: 90px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 50px;
   }
 }
 @media (min-width: 992px) {
   #aurora > div article h1 {
-    text-align: left;
+    padding-right: 0%;
+    text-align: right;
+    line-height: 90px;
+    margin-bottom: -5px;
+    margin-top: 65px;
   }
 }
 @media (min-width: 1200px) {
   #aurora > div article h1 {
-    text-align: left;
-    padding-left: 20%;
-    padding-right: 15%;
+    margin-bottom: -20px;
+    margin-top: 40px;
   }
 }
 #aurora > div section {
-  padding: 0px 40px;
-}
-@media (min-width: 768px) {
-  #aurora > div section {
-    grid-area: a-text;
-  }
+  grid-area: a-text;
 }
 #aurora > div section p {
   padding-bottom: 15px;
@@ -769,12 +791,12 @@ textarea {
     Unesco
 ============= */
 #unesco > div {
-  display: grid;
-  grid-template-columns: 5% auto auto 5%;
-  grid-template-areas: ". right paragraph .";
   background-image: url(../img/unesco/10.jpg);
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   height: 900px;
   width: 55%;
+}
+#unesco > div #right {
+  grid-area: right;
 }
