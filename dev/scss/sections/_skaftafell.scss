@@ -4,17 +4,43 @@
 
 #skaftafell{
 
-    // >div{
-    //     background-image: url(../img/skaftafell/3.jpg);
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     height: 900px;
-    // }
-
     display: grid;
-    grid-template-columns: 5% auto auto 5%;
+    grid-template-columns: 16px auto auto 16px;
     grid-template-areas: ". left right .";
-    padding: 20px;
+
+    @include md{
+        grid-template-columns: 100px auto auto 60px;
+    }
+    @include lg{
+        grid-template-columns: 95px auto auto 95px;
+    }
+    @include xl{
+        grid-template-columns: auto 700px 700px auto;
+    }
+
+    #left{
+        grid-area: left;
+
+        img{
+            width: 400px;
+        }
+        #circles{
+            text-align: center;
+            color: $navy;
+        }
+
+    }
+    #right{
+        grid-area: right;
+        p{
+            color: $navy;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            line-height: 20px;
+            font-size: rem-calc(14);
+            font-weight: 300;
+            font-family: 'work sans';
+        }
+    }
 
 }

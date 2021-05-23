@@ -622,9 +622,45 @@ textarea {
 ============= */
 #skaftafell {
   display: grid;
-  grid-template-columns: 5% auto auto 5%;
+  grid-template-columns: 16px auto auto 16px;
   grid-template-areas: ". left right .";
-  padding: 20px;
+}
+@media (min-width: 768px) {
+  #skaftafell {
+    grid-template-columns: 100px auto auto 60px;
+  }
+}
+@media (min-width: 992px) {
+  #skaftafell {
+    grid-template-columns: 95px auto auto 95px;
+  }
+}
+@media (min-width: 1200px) {
+  #skaftafell {
+    grid-template-columns: auto 700px 700px auto;
+  }
+}
+#skaftafell #left {
+  grid-area: left;
+}
+#skaftafell #left img {
+  width: 400px;
+}
+#skaftafell #left #circles {
+  text-align: center;
+  color: #0C1B43;
+}
+#skaftafell #right {
+  grid-area: right;
+}
+#skaftafell #right p {
+  color: #0C1B43;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  line-height: 20px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-family: "work sans";
 }
 
 /* =============
