@@ -622,54 +622,120 @@ textarea {
 ============= */
 #skaftafell {
   display: grid;
-  grid-template-columns: 16px auto auto 16px;
-  grid-template-areas: ". left right .";
+  grid-template-columns: auto 300px auto;
+  grid-template-areas: ". left ." ". right .";
 }
 @media (min-width: 768px) {
   #skaftafell {
-    grid-template-columns: 100px auto auto 60px;
+    grid-template-columns: 100px auto 400px 60px;
+    grid-template-areas: ". left . ." ". right right .";
   }
 }
 @media (min-width: 992px) {
   #skaftafell {
-    grid-template-columns: 95px auto auto 95px;
-  }
-}
-@media (min-width: 1200px) {
-  #skaftafell {
     grid-template-columns: auto 400px 400px auto;
+    grid-template-areas: ". left right .";
   }
 }
 #skaftafell #left {
   grid-area: left;
 }
-#skaftafell #left img {
-  width: 400px;
-  display: block;
-  margin-left: auto;
-}
-#skaftafell #left #circles {
-  text-align: center;
-  color: #0C1B43;
-}
-#skaftafell #left h2 {
+#skaftafell #left article h2 {
   color: #7D3731;
   font-size: 3.125rem;
   font-weight: 400;
   font-family: "rozha one";
+  margin-top: 15px;
+  margin-bottom: -14px;
+  margin-left: -30px;
+}
+@media (min-width: 768px) {
+  #skaftafell #left article h2 {
+    font-size: 6.5rem;
+    margin-top: 15px;
+    margin-bottom: -30px;
+    margin-left: -70px;
+  }
+}
+@media (min-width: 992px) {
+  #skaftafell #left article h2 {
+    margin-top: 100px;
+    margin-bottom: -30px;
+    margin-left: -70px;
+  }
+}
+@media (min-width: 1200px) {
+  #skaftafell #left article h2 {
+    margin-top: 80px;
+  }
+}
+#skaftafell #left img {
+  width: 300px;
+  display: block;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  #skaftafell #left img {
+    width: 400px;
+    margin-right: auto;
+  }
+}
+#skaftafell #left #circles {
+  text-align: center;
+  color: #0C1B43;
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+@media (min-width: 768px) {
+  #skaftafell #left #circles {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #skaftafell #left #circles {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  #skaftafell #left #circles {
+    margin-bottom: 80px;
+  }
 }
 #skaftafell #right {
   grid-area: right;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #skaftafell #right {
+    padding-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #skaftafell #right {
+    margin-top: 185px;
+  }
 }
 #skaftafell #right p {
   color: #0C1B43;
   padding-bottom: 15px;
-  padding-left: 20px;
   line-height: 20px;
   font-size: 0.875rem;
   font-weight: 300;
   font-family: "work sans";
 }
+@media (min-width: 768px) {
+  #skaftafell #right p {
+    max-width: 400px;
+    padding-left: 25%;
+  }
+}
+@media (min-width: 992px) {
+  #skaftafell #right p {
+    max-width: 400px;
+    padding-left: 0%;
+  }
+}
+
 /* =============
     Aurora
 ============= */

@@ -5,51 +5,105 @@
 #skaftafell{
 
     display: grid;
-    grid-template-columns: 16px auto auto 16px;
-    grid-template-areas: ". left right .";
+    grid-template-columns: auto 300px auto;
+    grid-template-areas: 
+    ". left ."
+    ". right .";
 
     @include md{
-        grid-template-columns: 100px auto auto 60px;
+        grid-template-columns: 100px auto 400px 60px;
+        grid-template-areas: ". left . ."
+        ". right right .";
     }
     @include lg{
-        grid-template-columns: 95px auto auto 95px;
-    }
-    @include xl{
         grid-template-columns: auto 400px 400px auto;
+        grid-template-areas: ". left right .";
     }
 
     #left{
         grid-area: left;
-
+        article{
+            h2{
+                color: $terracotta;
+                font-size: rem-calc(50);
+                font-weight: 400;
+                font-family: 'rozha one';
+                margin-top: 15px;
+                margin-bottom: -14px;
+                margin-left: -30px;
+    
+                @include md{
+                    font-size: rem-calc(104);
+                    margin-top: 15px;
+                    margin-bottom: -30px;
+                    margin-left: -70px;
+                    
+                }
+    
+                @include lg{
+                    margin-top: 100px;
+                    margin-bottom: -30px;
+                    margin-left: -70px;
+                }
+                @include xl{
+                    margin-top: 80px;
+                }
+            }
+        }
         img{
-            width: 400px;
+            width: 300px;
             display: block;
-            margin-left: auto;
+            margin: auto;
+
+
+            @include md{
+            width: 400px;
+            margin-right: auto;
+            }
         }
         #circles{
             text-align: center;
             color: $navy;
-        }
-        h2{
-            color: $terracotta;
-            font-size: rem-calc(50);
-            font-weight: 400;
-            font-family: 'rozha one';
+            margin-top: 10px;
+            margin-bottom: 22px;
+            @include md{
+                margin-bottom: 20px;
+            }
+            @include lg{
+                margin-bottom: 100px;
+            }
+            @include xl{
+                margin-bottom: 80px;
+            }
         }
     }
+
     #right{
         grid-area: right;
+        padding-bottom: 20px;
+
+        @include md{
+            padding-left: 20px;
+        }
+
+        @include lg{
+            margin-top: 185px;
+        }
         p{
             color: $navy;
             padding-bottom: 15px;
-            padding-left: 20px;
             line-height: 20px;
             font-size: rem-calc(14);
             font-weight: 300;
             font-family: 'work sans';
 
-            @include xl{
-
+            @include md{
+                max-width: 400px;
+                padding-left: 25%;
+            }
+            @include lg{
+                max-width: 400px;
+                padding-left: 0%;
             }
         }
     }
