@@ -71,12 +71,12 @@
                 @include md{
                     margin-right: 10%;
                     font-size: rem-calc(110);
-                    margin-top: -70px;
+                    margin-top: -20px;
                 }
                 @include lg{
                     padding-right: 0%;
                     text-align: right;
-                    margin-top: -50px;
+                    margin-top: -10px;
                 }
                 @include xl{
                     margin-right: -10%;
