@@ -15,7 +15,7 @@
         grid-template-columns: 95px auto auto 95px;
     }
     @include xl{
-        grid-template-columns: auto 700px 700px auto;
+        grid-template-columns: auto 400px 400px auto;
     }
 
     #left{
@@ -23,12 +23,19 @@
 
         img{
             width: 400px;
+            display: block;
+            margin-left: auto;
         }
         #circles{
             text-align: center;
             color: $navy;
         }
-
+        h2{
+            color: $terracotta;
+            font-size: rem-calc(50);
+            font-weight: 400;
+            font-family: 'rozha one';
+        }
     }
     #right{
         grid-area: right;
@@ -40,6 +47,10 @@
             font-size: rem-calc(14);
             font-weight: 300;
             font-family: 'work sans';
+
+            @include xl{
+
+            }
         }
     }
 

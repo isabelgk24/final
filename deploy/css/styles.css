@@ -637,7 +637,7 @@ textarea {
 }
 @media (min-width: 1200px) {
   #skaftafell {
-    grid-template-columns: auto 700px 700px auto;
+    grid-template-columns: auto 400px 400px auto;
   }
 }
 #skaftafell #left {
@@ -645,10 +645,18 @@ textarea {
 }
 #skaftafell #left img {
   width: 400px;
+  display: block;
+  margin-left: auto;
 }
 #skaftafell #left #circles {
   text-align: center;
   color: #0C1B43;
+}
+#skaftafell #left h2 {
+  color: #7D3731;
+  font-size: 3.125rem;
+  font-weight: 400;
+  font-family: "rozha one";
 }
 #skaftafell #right {
   grid-area: right;
@@ -662,7 +670,6 @@ textarea {
   font-weight: 300;
   font-family: "work sans";
 }
-
 /* =============
     Aurora
 ============= */
