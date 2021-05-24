@@ -1064,13 +1064,98 @@ textarea {
 /* =============
     Unesco
 ============= */
-#unesco > div {
+#unesco {
   background-image: url(../img/unesco/10.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  height: 900px;
-  width: 55%;
+  background-size: cover;
+  height: 320px;
+  width: 320px;
+  display: grid;
+  grid-template-columns: 40px 280px auto 40px;
+  grid-template-areas: ". rightsect . ." ". . paragraph .";
+  background-color: #7D3731;
 }
-#unesco > div #right {
-  grid-area: right;
+@media (min-width: 768px) {
+  #unesco {
+    height: 600px;
+    padding: 150px 0;
+  }
+}
+@media (min-width: 992px) {
+  #unesco {
+    height: 550px;
+    padding: 50px 0px 100px;
+  }
+}
+@media (min-width: 1200px) {
+  #unesco {
+    padding: 50px 0px 50px;
+  }
+}
+@media (min-width: 768px) {
+  #unesco {
+    grid-template-columns: 40% auto 20px;
+    grid-template-areas: "rightsect paragraph .";
+  }
+}
+@media (min-width: 992px) {
+  #unesco {
+    grid-template-columns: 95px auto 95px;
+  }
+}
+@media (min-width: 1200px) {
+  #unesco {
+    grid-template-columns: auto 1400px auto;
+  }
+}
+#unesco #rightsect {
+  grid-area: rightsect;
+}
+#unesco #rightsect h1 {
+  font-size: 3.5625rem;
+  font-weight: 400;
+  font-family: "rozha one";
+  color: #ffffff;
+}
+#unesco #rightsect div h4 {
+  font-size: 1.3125rem;
+  font-weight: 400;
+  font-family: "work sans";
+  font-style: italic;
+  color: #ffffff;
+}
+#unesco #rightsect div button {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.3125rem;
+  font-weight: 400;
+  font-family: "work sans";
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px 10px;
+  transition: 0.25s;
+}
+@media (min-width: 768px) {
+  #unesco #rightsect div button {
+    margin-bottom: 0px;
+  }
+}
+#unesco #rightsect div button:hover {
+  background-color: #ffffff;
+  color: #7D3731;
+  cursor: pointer;
+}
+#unesco #paragraph {
+  grid-area: paragraph;
+}
+#unesco #paragraph p {
+  padding-bottom: 15px;
+  line-height: 20px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-family: "work sans";
+  color: #ffffff;
 }

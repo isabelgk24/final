@@ -4,20 +4,106 @@
 
 #unesco{
 
-    >div{
-        // display: grid;
-        // grid-template-columns: 5% auto auto 5%;
-        // grid-template-areas: ". right paragraph .";
+    background-image: url(../img/unesco/10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    width: 320px;
+    @include md{
+        height: 600px;
+        padding: 150px 0;
+    }
+    @include lg{
+        height: 550px;
+        padding: 50px 0px 100px;
+    }
+    @include xl{
+        padding: 50px 0px 50px;
+    }
 
-        background-image: url(../img/unesco/10.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 900px;
-        width: 55%;
+    display: grid;
+    grid-template-columns: 40px 280px auto 40px;
+    grid-template-areas: 
+    ". rightsect . ."
+    ". . paragraph .";
 
-        #right{
-            grid-area: right;
+    @include md{
+        grid-template-columns: 40% auto 20px;
+        grid-template-areas: 
+        "rightsect paragraph .";
+    }
+    @include lg{
+        grid-template-columns: 95px auto 95px;
+    }
+    @include xl{
+        grid-template-columns: auto 1400px auto;
+    }
+
+    background-color: $terracotta;
+
+    #rightsect{
+        grid-area: rightsect;
+        h1{
+            font-size: rem-calc(57);
+            font-weight: 400;
+            font-family: 'rozha one';
+            color: $white;
+        }
+        div{
+            h4{
+                font-size: rem-calc(21);
+                font-weight: 400;
+                font-family: 'work sans';
+                font-style: italic;
+                color: $white;
+            }
+            button {
+                margin-top: 5px;
+                margin-bottom: 30px;
+                background-color: transparent;
+                color: $white;
+                font-size: rem-calc(21);
+                font-weight: 400;
+                font-family: 'work sans';
+                border: 1px solid $white;
+                border-radius: 5px;
+                padding: 10px 10px;
+                transition: .25s;
+
+                @include md{
+                    margin-bottom: 0px;
+                }
+
+                &:hover {
+                    background-color: $white;
+                    color: $terracotta;
+                    cursor: pointer;
+                }
+            }
+            // #aside{
+            //     img{
+            //         // display: inline-block;
+            //         height: 400px;
+            //         width: 55%;
+            //     }
+
+            // }
         }
     }
 
-} 
+    #paragraph{
+        grid-area: paragraph;
+
+        p{
+            padding-bottom: 15px;
+                line-height: 20px;
+                font-size: rem-calc(14);
+                font-weight: 300;
+                font-family: 'work sans';
+                color: $white;
+        }
+
+    }
+
+}  
