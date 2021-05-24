@@ -874,10 +874,50 @@ textarea {
 /* =============
    Conservation
 ============= */
-#conservation #images aside {
+@media (min-width: 768px) {
+  #conservation {
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    grid-template-areas: ". toptext ." ". images ." ". bottomtext .";
+  }
+}
+@media (min-width: 992px) {
+  #conservation {
+    grid-template-columns: 95px auto 95px;
+  }
+}
+@media (min-width: 1200px) {
+  #conservation {
+    grid-template-columns: auto 1400px auto;
+  }
+}
+#conservation article {
+  grid-area: toptext;
+}
+#conservation article h2 {
+  text-align: center;
+  font-size: 3.125rem;
+  font-weight: 400;
+  font-family: "rozha one";
+  color: #0C1B43;
+}
+#conservation article p {
+  line-height: 20px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-family: "work sans";
+  color: #0C1B43;
+  text-align: center;
+}
+#conservation #images {
+  grid-area: images;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: ". img5 img6 img7 img8 img9 .";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "img5 img6 img7 img8 img9";
+}
+#conservation #images aside {
+  padding: 15px;
+  align-items: center;
 }
 #conservation #images aside div {
   border-radius: 100%;
@@ -887,12 +927,24 @@ textarea {
   height: 82px;
   width: 82px;
   grid-area: img5;
+  display: none;
+}
+@media (min-width: 992px) {
+  #conservation #images aside #img5 {
+    display: inline-block;
+  }
 }
 #conservation #images aside #img6 {
   background-image: url("../img/conservation/6.jpg");
   height: 170px;
   width: 170px;
   grid-area: img6;
+  display: none;
+}
+@media (min-width: 768px) {
+  #conservation #images aside #img6 {
+    display: inline-block;
+  }
 }
 #conservation #images aside #img7 {
   background-image: url("../img/conservation/7.jpg");
@@ -905,12 +957,27 @@ textarea {
   height: 170px;
   width: 170px;
   grid-area: img8;
+  display: none;
+}
+@media (min-width: 768px) {
+  #conservation #images aside #img8 {
+    display: inline-block;
+  }
 }
 #conservation #images aside #img9 {
   background-image: url("../img/conservation/9.jpg");
   height: 82px;
   width: 82px;
   grid-area: img9;
+  display: none;
+}
+@media (min-width: 992px) {
+  #conservation #images aside #img9 {
+    display: inline-block;
+  }
+}
+#conservation #bottomtext {
+  grid-area: bottomtext;
 }
 
 /* =============

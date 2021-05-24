@@ -4,23 +4,68 @@
 
 #conservation{
 
-#images{
-   aside{
-      
+   @include md{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 40px auto 40px;
       grid-template-areas: 
-      ". img5 img6 img7 img8 img9 .";
+      ". toptext ."
+      ". images ."
+      ". bottomtext .";
+   }
+   @include lg{
+       grid-template-columns: 95px auto 95px;
+   }
+   @include xl{
+       grid-template-columns: auto 1400px auto;
+   }
+
+article{
+   grid-area: toptext;
+
+   h2{
+      text-align: center;
+      font-size: rem-calc(50);
+      font-weight: 400;
+      font-family: 'rozha one';
+      color: $navy;
+   }
+   p{
+      line-height: 20px;
+      font-size: rem-calc(14);
+      font-weight: 300;
+      font-family: 'work sans';
+      color: $navy;
+      text-align: center;
+   }
+
+}
+
+#images{
+
+   grid-area: images;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-areas: 
+   "img5 img6 img7 img8 img9";
+
+   aside{
 
       div{
          border-radius: 100%;
       }
+      padding: 15px;
+      align-items: center;
    
       #img5 {
          background-image: url("../img/conservation/5.jpg");
+
          height: 82px;
          width: 82px;
          grid-area: img5;
+         display: none;
+         @include lg{
+            display: inline-block;
+         }
       }
 
       #img6 {
@@ -28,6 +73,10 @@
          height: 170px;
          width: 170px;
          grid-area: img6;
+         display: none;
+         @include md{
+            display: inline-block;
+         }
       }
 
       #img7 {
@@ -42,6 +91,10 @@
          height: 170px;
          width: 170px;
          grid-area: img8;
+         display: none;
+         @include md{
+            display: inline-block;
+         }
       }
 
       #img9 {
@@ -49,9 +102,16 @@
          height: 82px;
          width: 82px;
          grid-area: img9;
+         display: none;
+         @include lg{
+            display: inline-block;
+         }
       }
 
    }
+}
+#bottomtext{
+   grid-area: bottomtext;
 }
 
 }
