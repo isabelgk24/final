@@ -2,63 +2,86 @@
     Unesco
 ============= */
 
-#unesco{
+#unesco {
 
-    background-image: url(../img/unesco/10.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 320px;
-    width: 320px;
-    @include md{
-        height: 600px;
+    // 
+    // height: 320px;
+    // width: 320px;
+    display: grid;
+
+    @include md {
+        // height: 600px;
         padding: 150px 0;
     }
-    @include lg{
-        height: 550px;
+
+    @include lg {
+        // height: 550px;
         padding: 50px 0px 100px;
     }
-    @include xl{
+
+    @include xl {
         padding: 50px 0px 50px;
     }
 
-    display: grid;
-    grid-template-columns: 40px 280px auto 40px;
-    grid-template-areas: 
-    ". rightsect . ."
-    ". . paragraph .";
+
+    // grid-template-columns: 40px 280px auto 40px;
+    // grid-template-areas: 
+    // ". rightsect . ."
+    // ". . paragraph .";
 
     @include md{
-        grid-template-columns: 40% auto 20px;
+        grid-template-columns: 40% auto;
         grid-template-areas: 
-        "rightsect paragraph .";
+        "rightsect paragraph";
     }
-    @include lg{
-        grid-template-columns: 95px auto 95px;
-    }
-    @include xl{
-        grid-template-columns: auto 1400px auto;
-    }
+    // @include lg{
+    //     grid-template-columns: 95px auto 95px;
+    // }
+    // @include xl{
+    //     grid-template-columns: auto 1400px auto;
+    // }
 
-    background-color: $terracotta;
 
-    #rightsect{
-        grid-area: rightsect;
-        h1{
-            font-size: rem-calc(57);
-            font-weight: 400;
-            font-family: 'rozha one';
-            color: $white;
+
+    #rightsect {
+        background-image: url(../img/unesco/10.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // grid-area: rightsect;
+        padding: 20px 20px 300px;
+        display: grid;
+        grid-template-areas: 
+        "content"
+        "title";
+
+        section{
+            display: none;
+            h1 {
+                font-size: rem-calc(57);
+                font-weight: 400;
+                font-family: 'rozha one';
+                color: $white;
+                grid-area: title;
+                margin-top: 100px;
+                position: relative;
+            }
         }
-        div{
-            h4{
+
+       
+
+        div {
+            grid-area: content;
+            h4 {
                 font-size: rem-calc(21);
                 font-weight: 400;
                 font-family: 'work sans';
                 font-style: italic;
                 color: $white;
             }
+
             button {
+                display: none;
                 margin-top: 5px;
                 margin-bottom: 30px;
                 background-color: transparent;
@@ -71,8 +94,9 @@
                 padding: 10px 10px;
                 transition: .25s;
 
-                @include md{
+                @include md {
                     margin-bottom: 0px;
+                    display: block;
                 }
 
                 &:hover {
@@ -81,6 +105,7 @@
                     cursor: pointer;
                 }
             }
+
             // #aside{
             //     img{
             //         // display: inline-block;
@@ -92,18 +117,46 @@
         }
     }
 
-    #paragraph{
-        grid-area: paragraph;
+    #paragraph {
+        // grid-area: paragraph;
+        background-color: $terracotta;
+        padding: 20px;
 
-        p{
-            padding-bottom: 15px;
-                line-height: 20px;
-                font-size: rem-calc(14);
-                font-weight: 300;
-                font-family: 'work sans';
+        section{
+            margin-top: -200px;
+            text-align: right;
+
+            @include md{
+                margin-top: 0;
+                text-align: left;
+                margin-left: -100px;
+            }
+            h1 {
+                font-size: rem-calc(57);
+                font-weight: 400;
+                font-family: 'rozha one';
                 color: $white;
+                grid-area: title;
+                margin-top: 100px;
+                position: relative;
+            }
+        }
+
+        p {
+            padding-bottom: 15px;
+            line-height: 20px;
+            font-size: rem-calc(14);
+            font-weight: 300;
+            font-family: 'work sans';
+            color: $white;
+        }
+
+        button {
+            @include md {
+                display: none;
+            }
         }
 
     }
 
-}  
+}

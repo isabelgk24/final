@@ -454,6 +454,8 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
+  margin-top: -240px;
+  position: relative;
 }
 
 /* =============
@@ -466,6 +468,12 @@ textarea {
 }
 #footer > div {
   grid-area: footer;
+  display: flex;
+}
+@media (min-width: 768px) {
+  #footer > div #socialicons {
+    margin-left: auto;
+  }
 }
 #footer > div #socialicons ul {
   grid-area: social;
@@ -481,7 +489,7 @@ textarea {
   margin-right: 5px;
   margin-left: 5px;
 }
-#footer > div h6 {
+#footer > div aside {
   margin-top: 16px;
   margin-bottom: 8px;
   text-align: center;
@@ -491,7 +499,13 @@ textarea {
   font-style: italic;
   color: #0C1B43;
 }
-#footer > div h6 a {
+@media (min-width: 768px) {
+  #footer > div aside {
+    text-align: left;
+    padding-right: 300px;
+  }
+}
+#footer > div aside a {
   font-size: 0.75rem;
   font-weight: 400;
   font-family: "work sans";
@@ -953,9 +967,8 @@ textarea {
 }
 #conservation #images {
   grid-area: images;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "img5 img6 img7 img8 img9";
+  display: flex;
+  align-items: center;
 }
 #conservation #images aside {
   padding: 15px;
@@ -1065,26 +1078,15 @@ textarea {
     Unesco
 ============= */
 #unesco {
-  background-image: url(../img/unesco/10.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 320px;
-  width: 320px;
   display: grid;
-  grid-template-columns: 40px 280px auto 40px;
-  grid-template-areas: ". rightsect . ." ". . paragraph .";
-  background-color: #7D3731;
 }
 @media (min-width: 768px) {
   #unesco {
-    height: 600px;
     padding: 150px 0;
   }
 }
 @media (min-width: 992px) {
   #unesco {
-    height: 550px;
     padding: 50px 0px 100px;
   }
 }
@@ -1095,28 +1097,33 @@ textarea {
 }
 @media (min-width: 768px) {
   #unesco {
-    grid-template-columns: 40% auto 20px;
-    grid-template-areas: "rightsect paragraph .";
-  }
-}
-@media (min-width: 992px) {
-  #unesco {
-    grid-template-columns: 95px auto 95px;
-  }
-}
-@media (min-width: 1200px) {
-  #unesco {
-    grid-template-columns: auto 1400px auto;
+    grid-template-columns: 40% auto;
+    grid-template-areas: "rightsect paragraph";
   }
 }
 #unesco #rightsect {
-  grid-area: rightsect;
+  background-image: url(../img/unesco/10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px 300px;
+  display: grid;
+  grid-template-areas: "content" "title";
 }
-#unesco #rightsect h1 {
+#unesco #rightsect section {
+  display: none;
+}
+#unesco #rightsect section h1 {
   font-size: 3.5625rem;
   font-weight: 400;
   font-family: "rozha one";
   color: #ffffff;
+  grid-area: title;
+  margin-top: 100px;
+  position: relative;
+}
+#unesco #rightsect div {
+  grid-area: content;
 }
 #unesco #rightsect div h4 {
   font-size: 1.3125rem;
@@ -1126,6 +1133,7 @@ textarea {
   color: #ffffff;
 }
 #unesco #rightsect div button {
+  display: none;
   margin-top: 5px;
   margin-bottom: 30px;
   background-color: transparent;
@@ -1141,6 +1149,7 @@ textarea {
 @media (min-width: 768px) {
   #unesco #rightsect div button {
     margin-bottom: 0px;
+    display: block;
   }
 }
 #unesco #rightsect div button:hover {
@@ -1149,7 +1158,28 @@ textarea {
   cursor: pointer;
 }
 #unesco #paragraph {
-  grid-area: paragraph;
+  background-color: #7D3731;
+  padding: 20px;
+}
+#unesco #paragraph section {
+  margin-top: -200px;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  #unesco #paragraph section {
+    margin-top: 0;
+    text-align: left;
+    margin-left: -100px;
+  }
+}
+#unesco #paragraph section h1 {
+  font-size: 3.5625rem;
+  font-weight: 400;
+  font-family: "rozha one";
+  color: #ffffff;
+  grid-area: title;
+  margin-top: 100px;
+  position: relative;
 }
 #unesco #paragraph p {
   padding-bottom: 15px;
@@ -1158,4 +1188,9 @@ textarea {
   font-weight: 300;
   font-family: "work sans";
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  #unesco #paragraph button {
+    display: none;
+  }
 }

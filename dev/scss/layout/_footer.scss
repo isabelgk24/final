@@ -10,8 +10,14 @@
 
     >div {
         grid-area: footer;
+        display: flex;
 
         #socialicons {
+            
+            @include md{
+        
+                margin-left: auto;
+            }
             ul {
                 grid-area: social;
                 display: flex;
@@ -28,7 +34,8 @@
             }
 
         }
-        h6{
+        aside{
+            
             margin-top: 16px;
             margin-bottom: 8px;
             text-align: center;
@@ -37,6 +44,11 @@
             font-family: 'work sans';
             font-style: italic;
             color: $navy;
+
+            @include md{
+                text-align: left;
+                padding-right: 300px;
+            }
 
             a{
             font-size: rem-calc(12px);
