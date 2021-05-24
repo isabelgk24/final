@@ -4,6 +4,24 @@
 
 #header{
 
+    article{
+    
+        margin-top: 75px;
+        margin-left: 25px;
+
+        @include md{
+            margin-top: 100px;
+        }
+        @include lg{
+            margin-top: 150px;
+            margin-left: 100px;
+        }
+        @include xl{
+            margin-top: 100px;
+            margin-left: 20%;
+        }
+
+
     #v{
         color: $terracotta;
         line-height: 50px;
@@ -34,13 +52,14 @@
             font-size: rem-calc(300);
         }
     }
+}
     >div{
         background-image: url(../img/header/1.png);
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 800px;
-        margin-top: -240px;
+        height: 800px; 
+        margin-top: -270px;
         position: relative;
     }
 }

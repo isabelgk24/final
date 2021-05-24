@@ -412,38 +412,59 @@ textarea {
 /* =============
     Header
 ============= */
-#header #v {
+#header article {
+  margin-top: 75px;
+  margin-left: 25px;
+}
+@media (min-width: 768px) {
+  #header article {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 992px) {
+  #header article {
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  #header article {
+    margin-top: 100px;
+    margin-left: 20%;
+  }
+}
+#header article #v {
   color: #7D3731;
   line-height: 50px;
   font-size: 3.5625rem;
   font-weight: 300;
 }
 @media (min-width: 768px) {
-  #header #v {
+  #header article #v {
     line-height: 90px;
     font-size: 6.875rem;
   }
 }
-#header #n {
+#header article #n {
   color: #0C1B43;
   line-height: 50px;
   font-size: 3.5625rem;
   font-weight: 300;
 }
 @media (min-width: 768px) {
-  #header #n {
+  #header article #n {
     line-height: 90px;
     font-size: 6.875rem;
   }
 }
-#header #p {
+#header article #p {
   color: #0C1B43;
   line-height: 70px;
   font-size: 8.75rem;
   font-weight: 300;
 }
 @media (min-width: 768px) {
-  #header #p {
+  #header article #p {
     line-height: 120px;
     font-size: 18.75rem;
   }
@@ -454,7 +475,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
-  margin-top: -240px;
+  margin-top: -270px;
   position: relative;
 }
 
