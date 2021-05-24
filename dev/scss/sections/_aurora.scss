@@ -42,7 +42,7 @@
         @include md{
             display: grid;
             grid-template-columns: auto 405px;
-            grid-template-areas: 
+            grid-template-areas:  
             "a-title a-title"
             ". a-text";
         }
@@ -68,6 +68,7 @@
                 font-family: 'rozha one';
                 line-height: 48px;
                 margin-bottom: 10px;
+                margin-top: 100px;
                 
                 @include md{
                     padding-right: 35%;
@@ -99,15 +100,16 @@
                 font-size: rem-calc(14);
                 font-weight: 300;
                 font-family: 'work sans';
-                span{
-                    display: none;
-                }
-                @include lg{
-
+            }
+            #leave{
+                display: none;
+                @include md{
+                    display: inline-block;
                 }
             }
             button {
                 margin-top: 5px;
+                margin-bottom: 30px;
                 background-color: transparent;
                 color: $white;
                 font-size: rem-calc(21);
@@ -117,6 +119,10 @@
                 border-radius: 5px;
                 padding: 10px 10px;
                 transition: .25s;
+
+                @include md{
+                    margin-bottom: 0px;
+                }
 
                 &:hover {
                     background-color: $white;

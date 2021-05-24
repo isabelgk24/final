@@ -576,6 +576,7 @@ textarea {
   font-size: 3.125rem;
   font-weight: 400;
   font-family: "rozha one";
+  margin-bottom: 100px;
 }
 @media (min-width: 768px) {
   #history > div article h2 {
@@ -598,6 +599,7 @@ textarea {
 }
 #history > div section {
   grid-area: h-text;
+  margin-top: 100px;
 }
 #history > div section p {
   padding-bottom: 15px;
@@ -605,6 +607,14 @@ textarea {
   font-size: 0.875rem;
   font-weight: 300;
   font-family: "work sans";
+}
+#history > div section .leave {
+  display: none;
+}
+@media (min-width: 768px) {
+  #history > div section .leave {
+    display: inline-block;
+  }
 }
 @media (min-width: 768px) {
   #history > div section {
@@ -814,6 +824,7 @@ textarea {
   font-family: "rozha one";
   line-height: 48px;
   margin-bottom: 10px;
+  margin-top: 100px;
 }
 @media (min-width: 768px) {
   #aurora > div article h1 {
@@ -850,11 +861,17 @@ textarea {
   font-weight: 300;
   font-family: "work sans";
 }
-#aurora > div section p span {
+#aurora > div section #leave {
   display: none;
+}
+@media (min-width: 768px) {
+  #aurora > div section #leave {
+    display: inline-block;
+  }
 }
 #aurora > div section button {
   margin-top: 5px;
+  margin-bottom: 30px;
   background-color: transparent;
   color: #ffffff;
   font-size: 1.3125rem;
@@ -864,6 +881,11 @@ textarea {
   border-radius: 5px;
   padding: 10px 10px;
   transition: 0.25s;
+}
+@media (min-width: 768px) {
+  #aurora > div section button {
+    margin-bottom: 0px;
+  }
 }
 #aurora > div section button:hover {
   background-color: #ffffff;

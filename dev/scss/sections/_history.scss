@@ -66,6 +66,7 @@
                 font-size: rem-calc(50);
                 font-weight: 400;
                 font-family: 'rozha one';
+                margin-bottom: 100px;
                 
                 @include md{
                     margin-right: 10%;
@@ -85,12 +86,19 @@
 
         section{
             grid-area: h-text;
+            margin-top: 100px;
             p{
                 padding-bottom: 15px;
                 line-height: 20px;
                 font-size: rem-calc(14);
                 font-weight: 300;
                 font-family: 'work sans';
+            }
+            .leave{
+                display: none;
+                @include md{
+                    display: inline-block;
+                }
             }
             @include md{
                 margin-top: 40px;
