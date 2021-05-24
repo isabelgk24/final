@@ -484,12 +484,29 @@ textarea {
 ============= */
 #footer {
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 70px auto 70px;
   grid-template-areas: ". footer .";
+}
+@media (min-width: 768px) {
+  #footer {
+    grid-template-columns: 10px auto 10px;
+  }
+}
+@media (min-width: 1200px) {
+  #footer {
+    grid-template-columns: auto 1200px auto;
+  }
 }
 #footer > div {
   grid-area: footer;
-  display: flex;
+}
+@media (min-width: 768px) {
+  #footer > div {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 @media (min-width: 768px) {
   #footer > div #socialicons {
@@ -504,13 +521,23 @@ textarea {
 #footer > div #socialicons ul li {
   margin-bottom: 16px;
 }
+@media (min-width: 768px) {
+  #footer > div #socialicons ul li {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #footer > div #socialicons ul li {
+    margin-top: 25px;
+  }
+}
 #footer > div #socialicons ul li i {
   color: #0C1B43;
   font-size: 1.25rem;
   margin-right: 5px;
   margin-left: 5px;
 }
-#footer > div aside {
+#footer > div aside h6 {
   margin-top: 16px;
   margin-bottom: 8px;
   text-align: center;
@@ -521,12 +548,17 @@ textarea {
   color: #0C1B43;
 }
 @media (min-width: 768px) {
-  #footer > div aside {
+  #footer > div aside h6 {
     text-align: left;
-    padding-right: 300px;
+    padding-right: 400px;
   }
 }
-#footer > div aside a {
+@media (min-width: 992px) {
+  #footer > div aside h6 {
+    padding-right: 0px;
+  }
+}
+#footer > div aside h6 a {
   font-size: 0.75rem;
   font-weight: 400;
   font-family: "work sans";
@@ -962,12 +994,12 @@ textarea {
 }
 @media (min-width: 992px) {
   #conservation article h2 {
-    padding-top: 75px;
+    padding-top: 80px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #conservation article h2 {
-    padding-top: 30px;
+    padding-top: 70px;
   }
 }
 #conservation article p {
@@ -1082,17 +1114,17 @@ textarea {
 }
 @media (min-width: 768px) {
   #conservation #bottomtext p {
-    padding-bottom: 80px;
+    padding-bottom: 120px;
   }
 }
 @media (min-width: 992px) {
   #conservation #bottomtext p {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 }
 @media (min-width: 1200px) {
   #conservation #bottomtext p {
-    padding-bottom: 60px;
+    padding-bottom: 90px;
   }
 }
 
@@ -1104,23 +1136,7 @@ textarea {
 }
 @media (min-width: 768px) {
   #unesco {
-    padding: 150px 0;
-  }
-}
-@media (min-width: 992px) {
-  #unesco {
-    padding: 50px 0px 100px;
-  }
-}
-@media (min-width: 1200px) {
-  #unesco {
-    padding: 50px 0px 50px;
-  }
-}
-@media (min-width: 768px) {
-  #unesco {
     grid-template-columns: 40% auto;
-    grid-template-areas: "rightsect paragraph";
   }
 }
 #unesco #rightsect {

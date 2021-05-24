@@ -4,51 +4,26 @@
 
 #unesco {
 
-    // 
-    // height: 320px;
-    // width: 320px;
     display: grid;
 
     @include md {
-        // height: 600px;
-        padding: 150px 0;
-    }
-
-    @include lg {
-        // height: 550px;
-        padding: 50px 0px 100px;
-    }
-
-    @include xl {
-        padding: 50px 0px 50px;
-    }
-
-
-    // grid-template-columns: 40px 280px auto 40px;
-    // grid-template-areas: 
-    // ". rightsect . ."
-    // ". . paragraph .";
-
-    @include md{
         grid-template-columns: 40% auto;
-        grid-template-areas: 
-        "rightsect paragraph";
+        // padding: 150px 0;
     }
-    // @include lg{
-    //     grid-template-columns: 95px auto 95px;
-    // }
-    // @include xl{
-    //     grid-template-columns: auto 1400px auto;
+
+    // @include lg {
+    //     padding: 50px 0px 100px;
     // }
 
-
+    // @include xl {
+    //     padding: 50px 0px 50px;
+    // }
 
     #rightsect {
         background-image: url(../img/unesco/10.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        // grid-area: rightsect;
         padding: 20px 20px 300px;
         display: grid;
         grid-template-areas: 
@@ -105,24 +80,14 @@
                     cursor: pointer;
                 }
             }
-
-            // #aside{
-            //     img{
-            //         // display: inline-block;
-            //         height: 400px;
-            //         width: 55%;
-            //     }
-
-            // }
         }
     }
 
     #paragraph {
-        // grid-area: paragraph;
         background-color: $terracotta;
         padding: 20px;
 
-        section{
+        section{ 
             margin-top: -200px;
             text-align: right;
 

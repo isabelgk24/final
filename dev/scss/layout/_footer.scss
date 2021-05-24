@@ -5,17 +5,27 @@
 #footer {
 
     display: grid;
-    grid-template-columns: 16px auto 16px;
+    grid-template-columns: 70px auto 70px;
     grid-template-areas: ". footer .";
+
+    @include md{
+        grid-template-columns: 10px auto 10px;
+    }
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
 
     >div {
         grid-area: footer;
-        display: flex;
+        @include md{
+            display: flex;
+            align-items: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
 
         #socialicons {
-            
             @include md{
-        
                 margin-left: auto;
             }
             ul {
@@ -24,6 +34,12 @@
                 justify-content: center;
                 li {
                     margin-bottom: 16px;
+                    @include md{
+                        margin-top: 20px;
+                    }
+                    @include lg{
+                        margin-top: 25px;
+                    }
                     i {
                         color: $navy;
                         font-size: rem-calc(20);
@@ -35,7 +51,8 @@
 
         }
         aside{
-            
+
+            h6{
             margin-top: 16px;
             margin-bottom: 8px;
             text-align: center;
@@ -47,7 +64,10 @@
 
             @include md{
                 text-align: left;
-                padding-right: 300px;
+                padding-right: 400px;
+            }
+            @include lg{
+                padding-right: 0px;
             }
 
             a{
@@ -60,5 +80,5 @@
             }
         }
     }
-
+    }
 }
