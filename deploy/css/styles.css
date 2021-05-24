@@ -883,12 +883,7 @@ textarea {
 }
 @media (min-width: 992px) {
   #conservation {
-    grid-template-columns: 95px auto 95px;
-  }
-}
-@media (min-width: 1200px) {
-  #conservation {
-    grid-template-columns: auto 1400px auto;
+    grid-template-columns: auto 900px auto;
   }
 }
 #conservation article {
@@ -900,6 +895,23 @@ textarea {
   font-weight: 400;
   font-family: "rozha one";
   color: #0C1B43;
+  padding-top: 100px;
+}
+@media (min-width: 768px) {
+  #conservation article h2 {
+    font-size: 6.875rem;
+    padding-top: 115px;
+  }
+}
+@media (min-width: 992px) {
+  #conservation article h2 {
+    padding-top: 75px;
+  }
+}
+@media (min-width: 992px) {
+  #conservation article h2 {
+    padding-top: 30px;
+  }
 }
 #conservation article p {
   line-height: 20px;
@@ -908,6 +920,14 @@ textarea {
   font-family: "work sans";
   color: #0C1B43;
   text-align: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: none;
+}
+@media (min-width: 768px) {
+  #conservation article p {
+    display: inline-block;
+  }
 }
 #conservation #images {
   grid-area: images;
@@ -917,10 +937,18 @@ textarea {
 }
 #conservation #images aside {
   padding: 15px;
+  padding-top: 40px;
+  padding-bottom: 15px;
   align-items: center;
 }
 #conservation #images aside div {
   border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #conservation #images aside {
+    padding-top: 48px;
+    padding-bottom: 36px;
+  }
 }
 #conservation #images aside #img5 {
   background-image: url("../img/conservation/5.jpg");
@@ -978,6 +1006,37 @@ textarea {
 }
 #conservation #bottomtext {
   grid-area: bottomtext;
+}
+#conservation #bottomtext h3 {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 400;
+  font-family: "rozha one";
+  color: #7D3731;
+}
+#conservation #bottomtext p {
+  line-height: 20px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-family: "work sans";
+  color: #0C1B43;
+  text-align: center;
+  padding-bottom: 100px;
+}
+@media (min-width: 768px) {
+  #conservation #bottomtext p {
+    padding-bottom: 115px;
+  }
+}
+@media (min-width: 992px) {
+  #conservation #bottomtext p {
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  #conservation #bottomtext p {
+    padding-bottom: 60px;
+  }
 }
 
 /* =============

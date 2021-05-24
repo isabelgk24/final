@@ -13,10 +13,7 @@
       ". bottomtext .";
    }
    @include lg{
-       grid-template-columns: 95px auto 95px;
-   }
-   @include xl{
-       grid-template-columns: auto 1400px auto;
+       grid-template-columns: auto 900px auto;
    }
 
 article{
@@ -28,6 +25,18 @@ article{
       font-weight: 400;
       font-family: 'rozha one';
       color: $navy;
+      padding-top: 100px;
+
+      @include md{
+         font-size: rem-calc(110);
+         padding-top: 115px;
+      }
+      @include lg{
+         padding-top: 75px;
+      }
+      @include lg{
+         padding-top: 30px;
+      }
    }
    p{
       line-height: 20px;
@@ -36,6 +45,14 @@ article{
       font-family: 'work sans';
       color: $navy;
       text-align: center;
+      padding-left: 80px;
+      padding-right: 80px;
+
+      display: none;
+
+      @include md{
+         display: inline-block;
+      }
    }
 
 }
@@ -54,7 +71,14 @@ article{
          border-radius: 100%;
       }
       padding: 15px;
+      padding-top: 40px;
+      padding-bottom: 15px;
       align-items: center;
+
+      @include md{
+         padding-top: 48px;
+         padding-bottom: 36px;
+      }
    
       #img5 {
          background-image: url("../img/conservation/5.jpg");
@@ -112,6 +136,33 @@ article{
 }
 #bottomtext{
    grid-area: bottomtext;
+   h3{
+      text-align: center;
+      font-size: rem-calc(36);
+      font-weight: 400;
+      font-family: 'rozha one';
+      color: $terracotta;
+   }
+   p{
+      line-height: 20px;
+      font-size: rem-calc(14);
+      font-weight: 300;
+      font-family: 'work sans';
+      color: $navy;
+      text-align: center;
+      padding-bottom: 100px;
+
+      @include md{
+         padding-bottom: 115px;
+      }
+
+      @include lg{
+         padding-bottom: 80px;
+      }
+      @include xl{
+         padding-bottom: 60px;
+      }
+   }
 }
 
 }
