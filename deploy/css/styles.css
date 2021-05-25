@@ -1139,6 +1139,11 @@ textarea {
     grid-template-columns: 45% 55%;
   }
 }
+@media (min-width: 992px) {
+  #unesco {
+    grid-template-columns: 55% 45%;
+  }
+}
 #unesco #rightsect {
   background-image: url(../img/unesco/10.jpg);
   background-position: center;
@@ -1147,6 +1152,12 @@ textarea {
   padding: 50px 15px 200px;
   display: grid;
   grid-template-areas: "title" "content";
+}
+@media (min-width: 992px) {
+  #unesco #rightsect {
+    height: 800px;
+    padding: 0;
+  }
 }
 #unesco #rightsect section {
   display: none;
@@ -1158,11 +1169,14 @@ textarea {
 }
 #unesco #rightsect section h1 {
   font-size: 6.875rem;
+  line-height: 90px;
   text-align: right;
   font-weight: 400;
   font-family: "rozha one";
   color: #ffffff;
   grid-area: title;
+  margin-top: 65px;
+  position: relative;
 }
 #unesco #rightsect div {
   grid-area: content;
@@ -1185,6 +1199,12 @@ textarea {
     margin-top: 240px;
   }
 }
+@media (min-width: 992px) {
+  #unesco #rightsect div h4 {
+    margin-top: -140px;
+    margin-right: 15px;
+  }
+}
 #unesco #rightsect div button {
   display: none;
   margin-top: 5px;
@@ -1205,6 +1225,11 @@ textarea {
     display: block;
     margin-left: auto;
     margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #unesco #rightsect div button {
+    margin-right: 15px;
   }
 }
 #unesco #rightsect div button:hover {
@@ -1255,7 +1280,7 @@ textarea {
     display: none;
   }
 }
-#unesco #paragraph p {
+#unesco #paragraph #largeparagraph {
   padding-bottom: 15px;
   line-height: 20px;
   font-size: 0.875rem;
@@ -1263,12 +1288,37 @@ textarea {
   font-family: "work sans";
   color: #ffffff;
 }
+@media (min-width: 992px) {
+  #unesco #paragraph #largeparagraph {
+    display: grid;
+    grid-template-columns: 15px 400px;
+    grid-template-areas: ". p1" ". p2" ". p3";
+  }
+}
 @media (min-width: 768px) {
-  #unesco #paragraph p {
+  #unesco #paragraph #largeparagraph {
     padding-right: 20px;
   }
 }
-#unesco #paragraph button {
+@media (min-width: 992px) {
+  #unesco #paragraph #largeparagraph {
+    padding-bottom: 10px;
+    padding-top: 100px;
+  }
+}
+#unesco #paragraph #largeparagraph #p1 {
+  grid-area: p1;
+  padding-bottom: 15px;
+}
+#unesco #paragraph #p2 {
+  grid-area: p2;
+  padding-bottom: 15px;
+}
+#unesco #paragraph #p3 {
+  grid-area: p3;
+  padding-bottom: 15px;
+}
+#unesco button {
   margin-top: 5px;
   margin-bottom: 0px;
   background-color: transparent;
@@ -1281,13 +1331,13 @@ textarea {
   padding: 10px 10px;
   transition: 0.25s;
 }
-#unesco #paragraph button:hover {
+#unesco button:hover {
   background-color: #ffffff;
   color: #7D3731;
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  #unesco #paragraph button {
+  #unesco button {
     display: none;
   }
 }
