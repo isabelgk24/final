@@ -471,7 +471,7 @@ textarea {
 }
 #header > div {
   background-image: url(../img/header/1.png);
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
@@ -1136,7 +1136,7 @@ textarea {
 }
 @media (min-width: 768px) {
   #unesco {
-    grid-template-columns: 40% auto;
+    grid-template-columns: 45% 55%;
   }
 }
 #unesco #rightsect {
@@ -1144,31 +1144,46 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20px 20px 300px;
+  padding: 50px 15px 200px;
   display: grid;
-  grid-template-areas: "content" "title";
+  grid-template-areas: "title" "content";
 }
 #unesco #rightsect section {
   display: none;
 }
+@media (min-width: 992px) {
+  #unesco #rightsect section {
+    display: block;
+  }
+}
 #unesco #rightsect section h1 {
-  font-size: 3.5625rem;
+  font-size: 6.875rem;
+  text-align: right;
   font-weight: 400;
   font-family: "rozha one";
   color: #ffffff;
   grid-area: title;
-  margin-top: 100px;
-  position: relative;
 }
 #unesco #rightsect div {
   grid-area: content;
 }
 #unesco #rightsect div h4 {
   font-size: 1.3125rem;
+  line-height: 25px;
   font-weight: 400;
   font-family: "work sans";
   font-style: italic;
   color: #ffffff;
+  text-align: right;
+  padding-left: 40%;
+  padding-top: 50px;
+}
+@media (min-width: 768px) {
+  #unesco #rightsect div h4 {
+    font-size: 2rem;
+    line-height: 38px;
+    margin-top: 240px;
+  }
 }
 #unesco #rightsect div button {
   display: none;
@@ -1188,6 +1203,8 @@ textarea {
   #unesco #rightsect div button {
     margin-bottom: 0px;
     display: block;
+    margin-left: auto;
+    margin-top: 20px;
   }
 }
 #unesco #rightsect div button:hover {
@@ -1197,7 +1214,12 @@ textarea {
 }
 #unesco #paragraph {
   background-color: #7D3731;
-  padding: 20px;
+  padding: 50px;
+}
+@media (min-width: 768px) {
+  #unesco #paragraph {
+    padding: 20px;
+  }
 }
 #unesco #paragraph section {
   margin-top: -200px;
@@ -1205,19 +1227,33 @@ textarea {
 }
 @media (min-width: 768px) {
   #unesco #paragraph section {
-    margin-top: 0;
-    text-align: left;
-    margin-left: -100px;
+    margin-top: 100px;
+    text-align: right;
   }
 }
 #unesco #paragraph section h1 {
   font-size: 3.5625rem;
+  line-height: 50px;
   font-weight: 400;
   font-family: "rozha one";
   color: #ffffff;
   grid-area: title;
-  margin-top: 100px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  margin-right: -35px;
   position: relative;
+}
+@media (min-width: 768px) {
+  #unesco #paragraph section h1 {
+    font-size: 5.3125rem;
+    line-height: 70px;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 992px) {
+  #unesco #paragraph section h1 {
+    display: none;
+  }
 }
 #unesco #paragraph p {
   padding-bottom: 15px;
@@ -1226,6 +1262,29 @@ textarea {
   font-weight: 300;
   font-family: "work sans";
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  #unesco #paragraph p {
+    padding-right: 20px;
+  }
+}
+#unesco #paragraph button {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.3125rem;
+  font-weight: 400;
+  font-family: "work sans";
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px 10px;
+  transition: 0.25s;
+}
+#unesco #paragraph button:hover {
+  background-color: #ffffff;
+  color: #7D3731;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   #unesco #paragraph button {
