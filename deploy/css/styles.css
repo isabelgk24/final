@@ -1175,8 +1175,7 @@ textarea {
   font-family: "rozha one";
   color: #ffffff;
   grid-area: title;
-  margin-top: 65px;
-  position: relative;
+  margin-top: 130px;
 }
 #unesco #rightsect div {
   grid-area: content;
