@@ -2,28 +2,30 @@
     Skaftafell
 ============= */
 
-#skaftafell{
+#skaftafell {
 
     display: grid;
     grid-template-columns: auto 300px auto;
-    grid-template-areas: 
-    ". left ."
-    ". right .";
+    grid-template-areas:
+        ". left ."
+        ". right .";
 
-    @include md{
+    @include md {
         grid-template-columns: 100px auto 400px 60px;
         grid-template-areas: ". left . ."
-        ". right right .";
+            ". right right .";
     }
-    @include lg{
+
+    @include lg {
         grid-template-columns: auto 400px 400px auto;
         grid-template-areas: ". left right .";
     }
 
-    #left{
+    #left {
         grid-area: left;
-        article{
-            h2{
+
+        article {
+            h2 {
                 color: $terracotta;
                 font-size: rem-calc(50);
                 font-weight: 400;
@@ -31,65 +33,72 @@
                 margin-top: 15px;
                 margin-bottom: -14px;
                 margin-left: -30px;
-    
-                @include md{
+
+                @include md {
                     font-size: rem-calc(104);
                     margin-top: 15px;
                     margin-bottom: -30px;
                     margin-left: -70px;
-                    
+
                 }
-    
-                @include lg{
+
+                @include lg {
                     margin-top: 100px;
                     margin-bottom: -30px;
                     margin-left: -70px;
                 }
-                @include xl{
+
+                @include xl {
                     margin-top: 80px;
                 }
             }
         }
-        img{
+
+        img {
             width: 300px;
             display: block;
             margin: auto;
 
 
-            @include md{
-            width: 400px;
-            margin-right: auto;
+            @include md {
+                width: 400px;
+                margin-right: auto;
             }
         }
-        #circles{
+
+        #circles {
             text-align: center;
             color: $navy;
             margin-top: 10px;
             margin-bottom: 22px;
-            @include md{
+
+            @include md {
                 margin-bottom: 20px;
             }
-            @include lg{
+
+            @include lg {
                 margin-bottom: 100px;
             }
-            @include xl{
+
+            @include xl {
                 margin-bottom: 80px;
             }
         }
     }
 
-    #right{
+    #right {
         grid-area: right;
         padding-bottom: 20px;
 
-        @include md{
+        @include md {
             padding-left: 20px;
         }
 
-        @include lg{
+        @include lg {
             margin-top: 185px;
         }
-        p{
+
+        p {
             color: $navy;
             padding-bottom: 15px;
             line-height: 20px;
@@ -97,11 +106,12 @@
             font-weight: 300;
             font-family: 'work sans';
 
-            @include md{
+            @include md {
                 max-width: 400px;
                 padding-left: 25%;
             }
-            @include lg{
+
+            @include lg {
                 max-width: 400px;
                 padding-left: 0%;
             }

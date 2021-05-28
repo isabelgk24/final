@@ -2,7 +2,7 @@
     History
 ============= */
 
-#history { 
+#history {
 
     background-image: url(../img/history/2.jpg);
     background-position: center;
@@ -11,15 +11,17 @@
     color: $navy;
     padding: 100px 0 40px;
 
-    @include md{
+    @include md {
         height: 600px;
         padding: 150px 0;
     }
-    @include lg{
+
+    @include lg {
         height: 550px;
         padding: 50px 0px 100px;
     }
-    @include xl{
+
+    @include xl {
         padding: 50px 0px 50px;
     }
 
@@ -27,83 +29,95 @@
     grid-template-columns: 40px auto 40px;
     grid-template-areas: ". text .";
 
-    @include md{
+    @include md {
         grid-template-columns: 105px auto 105px;
     }
-    @include lg{
+
+    @include lg {
         grid-template-columns: 180px auto 180px;
     }
-    @include xl{
+
+    @include xl {
         grid-template-columns: auto 1400px auto;
     }
-    
-    >div{
+
+    >div {
         grid-area: text;
-        @include md{
+
+        @include md {
             display: grid;
             grid-template-columns: 405px auto;
-            grid-template-areas: 
-            "h-text ."
-            "h-title h-title";
+            grid-template-areas:
+                "h-text ."
+                "h-title h-title";
         }
-        @include lg{
+
+        @include lg {
             grid-template-columns: 550px auto;
         }
-        @include xl{
-            grid-template-columns: auto 550px auto;
-            grid-template-areas: 
-            ". h-text ."
-            "h-title h-title .";
-        }
-    
 
-        article{
+        @include xl {
+            grid-template-columns: auto 550px auto;
+            grid-template-areas:
+                ". h-text ."
+                "h-title h-title .";
+        }
+
+
+        article {
             grid-area: h-title;
             text-align: left;
 
-            h2{
+            h2 {
                 text-align: right;
                 font-size: rem-calc(50);
                 font-weight: 400;
                 font-family: 'rozha one';
                 margin-bottom: 100px;
-                
-                @include md{
+
+                @include md {
                     margin-right: 10%;
                     font-size: rem-calc(110);
                     margin-top: -20px;
                 }
-                @include lg{
+
+                @include lg {
                     padding-right: 0%;
                     text-align: right;
                     margin-top: -10px;
                 }
-                @include xl{
+
+                @include xl {
                     margin-right: -10%;
                 }
             }
         }
 
-        section{
+        section {
             grid-area: h-text;
             margin-top: 100px;
-            p{
+
+            p {
                 padding-bottom: 15px;
                 line-height: 20px;
                 font-size: rem-calc(14);
                 font-weight: 300;
                 font-family: 'work sans';
             }
-            .leave{
+
+            .leave {
                 display: none;
-                @include md{
+
+                @include md {
                     display: inline-block;
                 }
             }
-            @include md{
+
+            @include md {
                 margin-top: 40px;
             }
-            @include lg{
+
+            @include lg {
                 margin-top: 80px;
             }
         }

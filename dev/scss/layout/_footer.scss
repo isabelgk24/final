@@ -8,16 +8,18 @@
     grid-template-columns: 70px auto 70px;
     grid-template-areas: ". footer .";
 
-    @include md{
+    @include md {
         grid-template-columns: 10px auto 10px;
     }
-    @include xl{
+
+    @include xl {
         grid-template-columns: auto 1200px auto;
     }
 
     >div {
         grid-area: footer;
-        @include md{
+
+        @include md {
             display: flex;
             align-items: center;
             margin-top: 0px;
@@ -25,21 +27,26 @@
         }
 
         #socialicons {
-            @include md{
+            @include md {
                 margin-left: auto;
             }
+
             ul {
                 grid-area: social;
                 display: flex;
                 justify-content: center;
+
                 li {
                     margin-bottom: 16px;
-                    @include md{
+
+                    @include md {
                         margin-top: 20px;
                     }
-                    @include lg{
+
+                    @include lg {
                         margin-top: 25px;
                     }
+
                     i {
                         color: $navy;
                         font-size: rem-calc(20);
@@ -50,35 +57,37 @@
             }
 
         }
-        aside{
 
-            h6{
-            margin-top: 16px;
-            margin-bottom: 8px;
-            text-align: center;
-            font-size: rem-calc(12px);
-            font-weight: 400;
-            font-family: 'work sans';
-            font-style: italic;
-            color: $navy;
+        aside {
 
-            @include md{
-                text-align: left;
-                padding-right: 400px;
-            }
-            @include lg{
-                padding-right: 0px;
-            }
+            h6 {
+                margin-top: 16px;
+                margin-bottom: 8px;
+                text-align: center;
+                font-size: rem-calc(12px);
+                font-weight: 400;
+                font-family: 'work sans';
+                font-style: italic;
+                color: $navy;
 
-            a{
-            font-size: rem-calc(12px);
-            font-weight: 400;
-            font-family: 'work sans';
-            font-style: italic;
-            color: $navy;
-            text-decoration: none;
+                @include md {
+                    text-align: left;
+                    padding-right: 400px;
+                }
+
+                @include lg {
+                    padding-right: 0px;
+                }
+
+                a {
+                    font-size: rem-calc(12px);
+                    font-weight: 400;
+                    font-family: 'work sans';
+                    font-style: italic;
+                    color: $navy;
+                    text-decoration: none;
+                }
             }
         }
-    }
     }
 }

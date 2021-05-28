@@ -55,10 +55,11 @@
                 display: block !important;
             }
 
-            ul{
-                li{
+            ul {
+                li {
                     padding: 5px;
-                    @include lg{
+
+                    @include lg {
                         text-align: center;
                         padding-top: 15px;
                         padding-bottom: 15px;

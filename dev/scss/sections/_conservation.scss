@@ -2,171 +2,184 @@
    Conservation
 ============= */
 
-#conservation{
+#conservation {
 
-   @include md{
+   @include md {
       display: grid;
       grid-template-columns: 40px auto 40px;
-      grid-template-areas: 
-      ". toptext ."
-      ". images ."
-      ". bottomtext .";
-   }
-   @include lg{
-       grid-template-columns: auto 900px auto;
+      grid-template-areas:
+         ". toptext ."
+         ". images ."
+         ". bottomtext .";
    }
 
-article{
-   grid-area: toptext;
-
-   h2{
-      text-align: center;
-      font-size: rem-calc(50);
-      font-weight: 400;
-      font-family: 'rozha one';
-      color: $navy;
-      padding-top: 100px;
-
-      @include md{
-         font-size: rem-calc(110);
-         padding-top: 115px;
-      }
-      @include lg{
-         padding-top: 80px;
-      }
-      @include xl{
-         padding-top: 70px;
-      }
-   }
-   p{
-      line-height: 20px;
-      font-size: rem-calc(14);
-      font-weight: 300;
-      font-family: 'work sans';
-      color: $navy;
-      text-align: center;
-      padding-left: 80px;
-      padding-right: 80px;
-
-      display: none;
-
-      @include md{
-         display: inline-block;
-      }
+   @include lg {
+      grid-template-columns: auto 900px auto;
    }
 
-}
+   article {
+      grid-area: toptext;
 
-#images{
+      h2 {
+         text-align: center;
+         font-size: rem-calc(50);
+         font-weight: 400;
+         font-family: 'rozha one';
+         color: $navy;
+         padding-top: 100px;
 
-   grid-area: images;
-   // display: grid;
-   // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   // grid-template-areas: 
-   // "img5 img6 img7 img8 img9";
-   display: flex;
-   align-items: center;
-   justify-content: center;
+         @include md {
+            font-size: rem-calc(110);
+            padding-top: 115px;
+         }
 
-   aside{
+         @include lg {
+            padding-top: 80px;
+         }
 
-      div{
-         border-radius: 100%;
+         @include xl {
+            padding-top: 70px;
+         }
       }
-      padding: 15px;
-      padding-top: 40px;
-      padding-bottom: 15px;
+
+      p {
+         line-height: 20px;
+         font-size: rem-calc(14);
+         font-weight: 300;
+         font-family: 'work sans';
+         color: $navy;
+         text-align: center;
+         padding-left: 80px;
+         padding-right: 80px;
+
+         display: none;
+
+         @include md {
+            display: inline-block;
+         }
+      }
+
+   }
+
+   #images {
+
+      grid-area: images;
+      // display: grid;
+      // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      // grid-template-areas: 
+      // "img5 img6 img7 img8 img9";
+      display: flex;
       align-items: center;
-      
+      justify-content: center;
 
-      @include md{
-         padding-top: 48px;
-         padding-bottom: 36px;
-      }
-   
-      #img5 {
-         background-image: url("../img/conservation/5.jpg");
+      aside {
 
-         height: 82px;
-         width: 82px;
-         grid-area: img5;
-         display: none;
-         @include lg{
-            display: inline-block;
+         div {
+            border-radius: 100%;
          }
-      }
 
-      #img6 {
-         background-image: url("../img/conservation/6.jpg");
-         height: 170px;
-         width: 170px;
-         grid-area: img6;
-         display: none;
-         @include md{
-            display: inline-block;
+         padding: 15px;
+         padding-top: 40px;
+         padding-bottom: 15px;
+         align-items: center;
+
+
+         @include md {
+            padding-top: 48px;
+            padding-bottom: 36px;
          }
-      }
 
-      #img7 {
-         background-image: url("../img/conservation/7.jpg");
-         height: 240px;
-         width: 240px;
-         grid-area: img7;
-      }
+         #img5 {
+            background-image: url("../img/conservation/5.jpg");
 
-      #img8 {
-         background-image: url("../img/conservation/8.jpg");
-         height: 170px;
-         width: 170px;
-         grid-area: img8;
-         display: none;
-         @include md{
-            display: inline-block;
+            height: 82px;
+            width: 82px;
+            grid-area: img5;
+            display: none;
+
+            @include lg {
+               display: inline-block;
+            }
          }
-      }
 
-      #img9 {
-         background-image: url("../img/conservation/9.jpg");
-         height: 82px;
-         width: 82px;
-         grid-area: img9;
-         display: none;
-         @include lg{
-            display: inline-block;
+         #img6 {
+            background-image: url("../img/conservation/6.jpg");
+            height: 170px;
+            width: 170px;
+            grid-area: img6;
+            display: none;
+
+            @include md {
+               display: inline-block;
+            }
          }
-      }
 
+         #img7 {
+            background-image: url("../img/conservation/7.jpg");
+            height: 240px;
+            width: 240px;
+            grid-area: img7;
+         }
+
+         #img8 {
+            background-image: url("../img/conservation/8.jpg");
+            height: 170px;
+            width: 170px;
+            grid-area: img8;
+            display: none;
+
+            @include md {
+               display: inline-block;
+            }
+         }
+
+         #img9 {
+            background-image: url("../img/conservation/9.jpg");
+            height: 82px;
+            width: 82px;
+            grid-area: img9;
+            display: none;
+
+            @include lg {
+               display: inline-block;
+            }
+         }
+
+      }
    }
-}
-#bottomtext{
-   grid-area: bottomtext;
-   h3{
-      text-align: center;
-      font-size: rem-calc(36);
-      font-weight: 400;
-      font-family: 'rozha one';
-      color: $terracotta;
-   }
-   p{
-      line-height: 20px;
-      font-size: rem-calc(14);
-      font-weight: 300;
-      font-family: 'work sans';
-      color: $navy;
-      text-align: center;
-      padding-bottom: 100px;
 
-      @include md{
-         padding-bottom: 120px;
+   #bottomtext {
+      grid-area: bottomtext;
+
+      h3 {
+         text-align: center;
+         font-size: rem-calc(36);
+         font-weight: 400;
+         font-family: 'rozha one';
+         color: $terracotta;
       }
 
-      @include lg{
+      p {
+         line-height: 20px;
+         font-size: rem-calc(14);
+         font-weight: 300;
+         font-family: 'work sans';
+         color: $navy;
+         text-align: center;
          padding-bottom: 100px;
-      }
-      @include xl{
-         padding-bottom: 90px;
+
+         @include md {
+            padding-bottom: 120px;
+         }
+
+         @include lg {
+            padding-bottom: 100px;
+         }
+
+         @include xl {
+            padding-bottom: 90px;
+         }
       }
    }
-}
 
 }
