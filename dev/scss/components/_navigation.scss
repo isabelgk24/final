@@ -10,7 +10,7 @@
 
         @include lg {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
         }
 
         li {
@@ -38,7 +38,7 @@
 
                 &:hover,
                 &:active {
-                    color: $black;
+                    color: $navy;
                 }
             }
         }

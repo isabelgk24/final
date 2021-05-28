@@ -410,7 +410,7 @@ textarea {
 @media (min-width: 992px) {
   #nav-container ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 #nav-container ul li {
@@ -442,12 +442,73 @@ textarea {
 #nav-container ul li a:link:hover, #nav-container ul li a:link:active,
 #nav-container ul li a:visited:hover,
 #nav-container ul li a:visited:active {
-  color: #0000;
+  color: #0C1B43;
 }
 
 /* =============
     Header
 ============= */
+#header {
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+}
+#header > div {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: ". burger" "nav nav";
+}
+@media (min-width: 992px) {
+  #header > div {
+    grid-template-columns: auto 90% auto;
+    grid-template-areas: ". nav .";
+  }
+}
+#header > div #burger-container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  grid-area: burger;
+}
+#header > div #burger-container i {
+  font-size: 2.1875rem;
+  cursor: pointer;
+  color: #0C1B43;
+  padding: 10px;
+}
+@media (min-width: 992px) {
+  #header > div #burger-container {
+    display: none !important;
+  }
+}
+#header > div #nav-container {
+  background-color: #ffffff;
+  width: 100%;
+  grid-area: nav;
+}
+@media (min-width: 992px) {
+  #header > div #nav-container {
+    background-color: #ffffff;
+    display: block !important;
+  }
+}
+#header > div #nav-container ul li {
+  padding: 5px;
+}
+@media (min-width: 992px) {
+  #header > div #nav-container ul li {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
 /* =============
     Footer
 ============= */

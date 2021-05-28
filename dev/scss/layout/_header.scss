@@ -1,3 +1,69 @@
 /* =============
     Header
 ============= */
+
+#header {
+
+    background-color: $white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header .";
+
+    >div {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: ". burger"
+            "nav nav";
+
+        @include lg {
+            grid-template-columns: auto 90% auto;
+            grid-template-areas: ". nav .";
+        }
+
+        #burger-container {
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            grid-area: burger;
+
+            i {
+                font-size: rem-calc(35);
+                cursor: pointer;
+                color: $navy;
+                padding: 10px;
+            }
+
+            @include lg {
+                display: none !important;
+            }
+        }
+
+        #nav-container {
+            background-color: $white;
+            width: 100%;
+            // display: block;
+            grid-area: nav;
+
+            @include lg {
+                background-color: $white;
+                display: block !important;
+            }
+
+            ul{
+                li{
+                    padding: 5px;
+                    @include lg{
+                        text-align: center;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
