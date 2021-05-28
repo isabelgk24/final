@@ -370,11 +370,6 @@ body image {
 /* =============
     Typography
 ============= */
-body {
-  font-family: "Work Sans", sans-serif;
-  font-family: "Rozha One", serif;
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -409,6 +404,47 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+}
+@media (min-width: 992px) {
+  #nav-container ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+#nav-container ul li {
+  margin-bottom: 5px;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  #nav-container ul li {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: #0C1B43;
+  font-family: "work sans", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 992px) {
+  #nav-container ul li a:link,
+#nav-container ul li a:visited {
+    color: #0C1B43;
+    padding: 0 20px;
+  }
+}
+#nav-container ul li a:link:hover, #nav-container ul li a:link:active,
+#nav-container ul li a:visited:hover,
+#nav-container ul li a:visited:active {
+  color: #0000;
+}
+
 /* =============
     Header
 ============= */
