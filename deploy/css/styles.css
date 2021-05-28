@@ -442,7 +442,7 @@ textarea {
 #nav-container ul li a:link:hover, #nav-container ul li a:link:active,
 #nav-container ul li a:visited:hover,
 #nav-container ul li a:visited:active {
-  color: #0C1B43;
+  color: #7D3731;
 }
 
 /* =============
@@ -452,6 +452,7 @@ textarea {
   background-color: #ffffff;
   width: 100%;
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   display: grid;
